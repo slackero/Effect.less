@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Effect.less - CSS3 Animation Library</title>
+    <meta name="description" content="Cross-Browser CSS3 Animation Library with Predefined Animation Sequences">
+    <meta name="author" content="Max Lawrence">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    <!-- fonts -->
+    <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,800,800italic,600,600italic,400italic'>
+    <!-- /end fonts -->
+    
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="../effect.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- /end styles -->
+</head>
+<body>
+    <div class="page-wrap">
+        <a href="https://github.com/MaxLawrence"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+    
+        <div class="header">
+            <div class="title"><h1>Effect.less - CSS3 Animation Library</h1></div>
+            <div class="subtitle">This is a package of cross-browser css3 animations that I use in my projects. I would like to thank to <a href="https://github.com/daneden/animate.css" rel="nofollow">Daniel Eden</a> and <a href="https://github.com/miniMAC/magic" rel="nofollow">Christian Pucci</a> for their awesome libraries!</div>
+        </div>
+        
+        <div class="btn-group">
+            <div class="title">General</div>
+            <div class="group">
+                <div class="btn" data-fx-name="fx-bounce">Bounce</div>
+                <div class="btn" data-fx-name="fx-pulse">Pulse</div>
+                <div class="btn" data-fx-name="fx-rubberBand">Rubber Band</div>
+                <div class="btn" data-fx-name="fx-shake">Shake</div>
+                <div class="btn" data-fx-name="fx-headShake">Head Shake</div>
+                <div class="btn" data-fx-name="fx-swing">Swing</div>
+                <div class="btn" data-fx-name="fx-tada">Tada</div>
+                <div class="btn" data-fx-name="fx-wobble">Wobble</div>
+                <div class="btn" data-fx-name="fx-jello">Jello</div>
+                <div class="btn" data-fx-name="fx-hinge">Hinge</div>
+            </div>
+        </div>
+    
+        <div class="btn-group">
+            <div class="title">Bounce In & Out</div>
+            <div class="group">
+                <div class="btn" data-fx-name="fx-bounceIn">BounceIn</div>
+                <div class="btn" data-fx-name="fx-bounceInDown">BounceInDown</div>
+                <div class="btn" data-fx-name="fx-bounceInLeft">BounceInLeft</div>
+                <div class="btn" data-fx-name="fx-bounceInRight">BounceInRight</div>
+                <div class="btn" data-fx-name="fx-bounceInUp">BounceInUp</div>
+                <div class="btn" data-fx-name="fx-bounceOut">BounceOut</div>
+                <div class="btn" data-fx-name="fx-bounceOutDown">BounceOutDown</div>
+                <div class="btn" data-fx-name="fx-bounceOutLeft">BounceOutLeft</div>
+                <div class="btn" data-fx-name="fx-bounceOutRight">BounceOutRight</div>
+                <div class="btn" data-fx-name="fx-bounceOutUp">BounceOutUp</div>
+            </div>
+        </div>
+        
+        <div class="btn-group">
+            <div class="title">Fade In & Out</div>
+            <div class="group">
+                <div class="btn" data-fx-name="fx-fadeIn">FadeIn</div>
+                <div class="btn" data-fx-name="fx-fadeInDown">FadeInDown</div>
+                <div class="btn" data-fx-name="fx-fadeInLeft">FadeInLeft</div>
+                <div class="btn" data-fx-name="fx-fadeInRight">FadeInRight</div>
+                <div class="btn" data-fx-name="fx-fadeInUp">FadeInUp</div>
+                <div class="btn" data-fx-name="fx-fadeOut">FadeOut</div>
+                <div class="btn" data-fx-name="fx-fadeOutDown">FadeOutDown</div>
+                <div class="btn" data-fx-name="fx-fadeOutLeft">FadeOutLeft</div>
+                <div class="btn" data-fx-name="fx-fadeOutRight">FadeOutRight</div>
+                <div class="btn" data-fx-name="fx-fadeOutUp">fadeOutUp</div>
+            </div>
+        </div>
+        
+        <div class="btn-group">
+            <div class="title">Rotate In & Out</div>
+            <div class="group">
+                <div class="btn" data-fx-name="fx-rotateIn">RotateIn</div>
+                <div class="btn" data-fx-name="fx-rotateInDownLeft">RotateInDownLeft</div>
+                <div class="btn" data-fx-name="fx-rotateInDownRight">RotateInDownRight</div>
+                <div class="btn" data-fx-name="fx-rotateInUpLeft">RotateInUpLeft</div>
+                <div class="btn" data-fx-name="fx-rotateInUpRight">RotateInUpRight</div>
+                <div class="btn" data-fx-name="fx-rotateOut">rotateOut</div>
+                <div class="btn" data-fx-name="fx-rotateOutDownLeft">RotateOutDownLeft</div>
+                <div class="btn" data-fx-name="fx-rotateOutDownRight">RotateOutDownRight</div>
+                <div class="btn" data-fx-name="fx-rotateOutUpLeft">RotateOutUpLeft</div>
+                <div class="btn" data-fx-name="fx-rotateOutUpRight">RotateOutUpRight</div>
+            </div>
+        </div>
+        
+        <div class="btn-group">
+            <div class="title">Zoom In & Out</div>
+            <div class="group">
+                <div class="btn" data-fx-name="fx-zoomIn">ZoomIn</div>
+                <div class="btn" data-fx-name="fx-zoomInDown">ZoomInDown</div>
+                <div class="btn" data-fx-name="fx-zoomInLeft">ZoomInLeft</div>
+                <div class="btn" data-fx-name="fx-zoomInRight">ZoomInRight</div>
+                <div class="btn" data-fx-name="fx-zoomInUp">ZoomInUp</div>
+                <div class="btn" data-fx-name="fx-zoomOut">ZoomOut</div>
+                <div class="btn" data-fx-name="fx-zoomOutDown">ZoomOutDown</div>
+                <div class="btn" data-fx-name="fx-zoomOutLeft">ZoomOutLeft</div>
+                <div class="btn" data-fx-name="fx-zoomOutRight">ZoomOutRight</div>
+                <div class="btn" data-fx-name="fx-zoomOutUp">ZoomOutUp</div>
+            </div>
+        </div>
+        
+        <div class="btn-group">
+            <div class="title">Slide In & Out</div>
+            <div class="group">
+                <div class="btn" data-fx-name="fx-slideInDown">SlideInDown</div>
+                <div class="btn" data-fx-name="fx-slideInLeft">SlideInLeft</div>
+                <div class="btn" data-fx-name="fx-slideInRight">SlideInRight</div>
+                <div class="btn" data-fx-name="fx-slideInUp">SlideInUp</div>
+                <div class="btn" data-fx-name="fx-slideOutDown">SlideOutDown</div>
+                <div class="btn" data-fx-name="fx-slideOutLeft">SlideOutLeft</div>
+                <div class="btn" data-fx-name="fx-slideOutRight">SlideOutRight</div>
+                <div class="btn" data-fx-name="fx-slideOutUp">SlideOutUp</div>
+            </div>
+        </div>
+        
+        <div class="btn-group">
+            <div class="title">Perspective In & Out</div>
+            <div class="group">
+                <div class="btn" data-fx-name="fx-perspectiveInDown">PerspectiveInDown</div>
+                <div class="btn" data-fx-name="fx-perspectiveInLeft">PerspectiveInLeft</div>
+                <div class="btn" data-fx-name="fx-perspectiveInRight">PerspectiveInRight</div>
+                <div class="btn" data-fx-name="fx-perspectiveInUp">PerspectiveInUp</div>
+                <div class="btn" data-fx-name="fx-perspectiveOutDown">PerspectiveOutDown</div>
+                <div class="btn" data-fx-name="fx-perspectiveOutLeft">PerspectiveOutLeft</div>
+                <div class="btn" data-fx-name="fx-perspectiveOutRight">PerspectiveOutRight</div>
+                <div class="btn" data-fx-name="fx-perspectiveOutUp">PerspectiveOutUp</div>
+            </div>
+        </div>
+        
+        <div class="btn-group">
+            <div class="title">Tin In & Out</div>
+            <div class="group">
+                <div class="btn" data-fx-name="fx-tinInDown">TinInDown</div>
+                <div class="btn" data-fx-name="fx-tinInLeft">TinInLeft</div>
+                <div class="btn" data-fx-name="fx-tinInRight">TinInRight</div>
+                <div class="btn" data-fx-name="fx-tinInUp">TinInUp</div>
+                <div class="btn" data-fx-name="fx-tinOutDown">TinOutDown</div>
+                <div class="btn" data-fx-name="fx-tinOutLeft">TinOutLeft</div>
+                <div class="btn" data-fx-name="fx-tinOutRight">TinOutRight</div>
+                <div class="btn" data-fx-name="fx-tinOutUp">TinOutUp</div>
+            </div>
+        </div>
+        
+        <div class="btn-group">
+            <div class="title">Space In & Out</div>
+            <div class="group">
+                <div class="btn" data-fx-name="fx-spaceInDown">SpaceInDown</div>
+                <div class="btn" data-fx-name="fx-spaceInLeft">SpaceInLeft</div>
+                <div class="btn" data-fx-name="fx-spaceInRight">SpaceInRight</div>
+                <div class="btn" data-fx-name="fx-spaceInUp">SpaceInUp</div>
+                <div class="btn" data-fx-name="fx-spaceOutDown">SpaceOutDown</div>
+                <div class="btn" data-fx-name="fx-spaceOutLeft">SpaceOutLeft</div>
+                <div class="btn" data-fx-name="fx-spaceOutRight">SpaceOutRight</div>
+                <div class="btn" data-fx-name="fx-spaceOutUp">SpaceOutUp</div>
+            </div>
+        </div>
+        
+        <div class="btn-group">
+            <div class="title">Flip In & Out</div>
+            <div class="group">
+                <div class="btn" data-fx-name="fx-flip">Flip</div>
+                <div class="btn" data-fx-name="fx-flipInX">FlipInX</div>
+                <div class="btn" data-fx-name="fx-flipInY">FlipInY</div>
+                <div class="btn" data-fx-name="fx-flipOutX">FlipOutX</div>
+                <div class="btn" data-fx-name="fx-flipOutY">FlipOutY</div>
+            </div>
+        </div>
+        
+        <div class="btn-group">
+            <div class="title">LightSpeed In & Out</div>
+            <div class="group">
+                <div class="btn" data-fx-name="fx-lightSpeedIn">LightSpeedIn</div>
+                <div class="btn" data-fx-name="fx-lightSpeedOut">LightSpeedOut</div>
+            </div>
+        </div>
+        
+        <div class="btn-group">
+            <div class="title">Roll In & Out</div>
+            <div class="group">
+                <div class="btn" data-fx-name="fx-rollIn">RollIn</div>
+                <div class="btn" data-fx-name="fx-rollOut">RollOut</div>
+            </div>
+        </div>
+        
+        <div class="btn-group">
+            <div class="title">Vanish In & Out</div>
+            <div class="group">
+                <div class="btn" data-fx-name="fx-vanishIn">VanishIn</div>
+                <div class="btn" data-fx-name="fx-vanishOut">VanishOut</div>
+            </div>
+        </div>
+        
+        <div class="btn-group">
+            <div class="title">Swash In & Out</div>
+            <div class="group">
+                <div class="btn" data-fx-name="fx-swashIn">SwashIn</div>
+                <div class="btn" data-fx-name="fx-swashOut">SwashOut</div>
+            </div>
+        </div>
+        
+        <div class="btn-group">
+            <div class="title">Foolish In & Out</div>
+            <div class="group">
+                <div class="btn" data-fx-name="fx-foolishIn">FoolishIn</div>
+                <div class="btn" data-fx-name="fx-foolishOut">FoolishOut</div>
+            </div>
+        </div>
+        
+        <div class="btn-group">
+            <div class="title">Hole In & Out</div>
+            <div class="group">
+                <div class="btn" data-fx-name="fx-holeIn">HoleIn</div>
+                <div class="btn" data-fx-name="fx-holeOut">HoleOut</div>
+            </div>
+        </div>
+        
+        <div class="btn-group">
+            <div class="title">Bomb Out</div>
+            <div class="group">
+                <div class="btn" data-fx-name="fx-bombOutLeft">BombOutLeft</div>
+                <div class="btn" data-fx-name="fx-bombOutRight">BombOutRight</div>
+            </div>
+        </div>
+
+    </div>
+    
+    <script type="text/javascript" src="assets/js/lib/jquery.min.js" ></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>

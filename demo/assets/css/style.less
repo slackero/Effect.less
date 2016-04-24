@@ -1,0 +1,104 @@
+//===========================================
+// Colors
+//===========================================
+@color-body:#46586e;
+@color-btn:#766dcc;
+@color-btn-info:#6dcc84;
+
+//===========================================
+// Mixins
+//===========================================
+.transition(@string) {
+    -webkit-transition:@string;
+    -moz-transition:@string;
+    -ms-transition:@string;
+    -o-transition:@string;
+    transition:@string;
+}
+
+//===========================================
+// General
+//===========================================
+html,
+body {
+    margin:0;
+    padding:0;
+    width:100%;
+}
+body {
+    background:@color-body url("../images/seamless.png");
+    font-family:"Open Sans", sans-serif;
+    color:#fff;
+    font-size:16px;
+    text-align:center;
+}
+a {
+    color:#fff;
+}
+.page-wrap {
+    width:100%;
+    overflow-x:hidden;
+    padding-bottom:100px;
+}
+.header {
+    padding:0 15%;
+    margin:15px 0 30px;
+    
+    .title {
+        h1 {
+            font-size:36px;
+            margin:0 0 10px;
+        }
+    }
+    .subtitle {
+        font-size:16px;
+        line-height:20px;
+    }
+}
+
+.toolbar {
+    text-align:center;
+}
+.btn {
+    .transition(.4s);
+    display:inline-block;
+    font-weight:bold;
+    font-size:14px;
+    text-align:center;
+    text-decoration:none;
+    color:#fff;
+    padding:10px 15px;
+    margin:10px;
+    min-width:150px;
+    background-color:@color-btn;
+    border-bottom:3px solid darken(@color-btn,10%);
+    border-radius:3px;
+    cursor:pointer;
+    
+    &:hover {
+        background-color:lighten(@color-btn,5%);
+    }
+    
+    &.btn-group {
+    }
+    
+    &.btn-info {
+        background-color:@color-btn-info;
+        border-bottom:3px solid darken(@color-btn-info,10%);
+        text-transform:uppercase;
+        
+        &:hover {
+            background-color:lighten(@color-btn-info,5%);
+        }
+    }
+}
+.btn-group {
+    padding:0 15%;
+    
+    .title {
+        margin:30px 0 15px 0;
+        font-size:26px;
+        font-weight:bold;
+        text-shadow:0px 1px 2px fade(#000,60%);
+    }
+}

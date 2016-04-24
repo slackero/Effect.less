@@ -1,0 +1,76 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+body {
+  background: #46586e url("../images/seamless.png");
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+a {
+  color: #fff;
+}
+.page-wrap {
+  width: 100%;
+  overflow-x: hidden;
+  padding-bottom: 100px;
+}
+.header {
+  padding: 0 15%;
+  margin: 15px 0 30px;
+}
+.header .title h1 {
+  font-size: 36px;
+  margin: 0 0 10px;
+}
+.header .subtitle {
+  font-size: 16px;
+  line-height: 20px;
+}
+.toolbar {
+  text-align: center;
+}
+.btn {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  margin: 10px;
+  min-width: 150px;
+  background-color: #766dcc;
+  border-bottom: 3px solid #5347bf;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #8880d3;
+}
+.btn.btn-info {
+  background-color: #6dcc84;
+  border-bottom: 3px solid #47bf64;
+  text-transform: uppercase;
+}
+.btn.btn-info:hover {
+  background-color: #80d394;
+}
+.btn-group {
+  padding: 0 15%;
+}
+.btn-group .title {
+  margin: 30px 0 15px 0;
+  font-size: 26px;
+  font-weight: bold;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6);
+}

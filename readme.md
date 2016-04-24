@@ -4,6 +4,7 @@
 
 Effect.less is a cross-browser CSS3 animation library with predefined animation sequences that I use in my web projects. I would like to thank to [Daniel Eden] (https://github.com/daneden/animate.css) and [Christian Pucci] (https://github.com/miniMAC/magic) for their awesome libraries!
 
+- [See the demo](http://avirtum.com/demo/effectless)
 
 ### Basic usage
 

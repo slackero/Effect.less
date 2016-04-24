@@ -10,15 +10,15 @@ Effect.less is a cross-browser CSS3 animation library with predefined animation 
 1. Include the stylesheet on your document's `<head>`
 
 ```html
-  <head>
-    <link rel="stylesheet" href="animate.min.css">
-  </head>
+<head>
+    <link rel="stylesheet" href="effect.css">
+</head>
 ```
   
 2. Add the animation class to the element you want to animate via javascript. 
 
 ```javascript
-    $("#button").addClass("fx-bounce");
+$("#button").addClass("fx-bounce");
 ```
 3. You have list of over 100 animation classes:
 

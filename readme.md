@@ -20,7 +20,7 @@ Effect.less is a cross-browser CSS3 animation library with predefined animation 
 ```javascript
 $("#button").addClass("fx-bounce");
 ```
-3. You have list of over 100 animation classes:
+3. You have list of over 100 animation classes.
 
 
 ### LICENSE

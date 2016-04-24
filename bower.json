@@ -1,0 +1,17 @@
+{
+  "name": "effect.less",
+  "version": "1.0.0",
+  "homepage": "https://github.com/maxlawrence/effect.less",
+  "authors": [
+    "Max Lawrence <avirtum@gmail.com>"
+  ],
+  "description": "Cross-Browser CSS3 Animation Library with over 100 Predefined Animation Sequences.",
+  "main": [
+    "effect.css"
+  ],
+  "keywords": [
+    "css3",
+    "animation"
+  ],
+  "license": "MIT"
+}

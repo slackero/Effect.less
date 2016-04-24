@@ -7,7 +7,7 @@ Effect.less is a cross-browser CSS3 animation library with predefined animation 
 
 ### Basic usage
 
-1. Include the stylesheet on your document's "<head>"
+1) Include the stylesheet on your document's "<head>"
 
 ```html
 <head>
@@ -15,13 +15,13 @@ Effect.less is a cross-browser CSS3 animation library with predefined animation 
 </head>
 ```
 
-2. Add the animation class to the element you want to animate via javascript.
+2) Add the animation class to the element you want to animate via javascript.
 
 ```javascript
 $("#button").addClass("fx-bounce");
 ```
 
-3. You have list of over 100 animation classes.
+3) You have list of over 100 animation classes.
 
 
 ### LICENSE

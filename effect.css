@@ -11,8 +11,8 @@
   animation-iteration-count: infinite;
 }
 .fx-bounce {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-bounce;
@@ -79,8 +79,8 @@
   }
 }
 .fx-pulse {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-pulse;
@@ -115,8 +115,8 @@
   }
 }
 .fx-rubberBand {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-rubberBand;
@@ -183,8 +183,8 @@
   }
 }
 .fx-shake {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-shake;
@@ -235,8 +235,8 @@
   }
 }
 .fx-headShake {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-headShake;
@@ -297,8 +297,8 @@
   }
 }
 .fx-swing {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-swing;
@@ -351,8 +351,8 @@
   }
 }
 .fx-tada {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-tada;
@@ -415,8 +415,8 @@
   }
 }
 .fx-wobble {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-wobble;
@@ -483,8 +483,8 @@
   }
 }
 .fx-jello {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-jello;
@@ -565,8 +565,8 @@
   }
 }
 .fx-hinge {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-hinge;
@@ -613,8 +613,8 @@
   }
 }
 .fx-bounceIn {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-bounceIn;
@@ -695,8 +695,8 @@
   }
 }
 .fx-bounceInDown {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-bounceInDown;
@@ -767,8 +767,8 @@
   }
 }
 .fx-bounceInLeft {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-bounceInLeft;
@@ -839,8 +839,8 @@
   }
 }
 .fx-bounceInRight {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-bounceInRight;
@@ -911,8 +911,8 @@
   }
 }
 .fx-bounceInUp {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-bounceInUp;
@@ -983,8 +983,8 @@
   }
 }
 .fx-bounceOut {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-bounceOut;
@@ -1025,8 +1025,8 @@
   }
 }
 .fx-bounceOutDown {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-bounceOutDown;
@@ -1067,8 +1067,8 @@
   }
 }
 .fx-bounceOutLeft {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-bounceOutLeft;
@@ -1099,8 +1099,8 @@
   }
 }
 .fx-bounceOutRight {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-bounceOutRight;
@@ -1131,8 +1131,8 @@
   }
 }
 .fx-bounceOutUp {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-bounceOutUp;
@@ -1173,8 +1173,8 @@
   }
 }
 .fx-fadeIn {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-fadeIn;
@@ -1197,8 +1197,8 @@
   }
 }
 .fx-fadeInDown {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-fadeInDown;
@@ -1229,8 +1229,8 @@
   }
 }
 .fx-fadeInLeft {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-fadeInLeft;
@@ -1261,8 +1261,8 @@
   }
 }
 .fx-fadeInRight {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-fadeInRight;
@@ -1293,8 +1293,8 @@
   }
 }
 .fx-fadeInUp {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-fadeInUp;
@@ -1325,8 +1325,8 @@
   }
 }
 .fx-fadeOut {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-fadeOut;
@@ -1349,8 +1349,8 @@
   }
 }
 .fx-fadeOutDown {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-fadeOutDown;
@@ -1377,8 +1377,8 @@
   }
 }
 .fx-fadeOutLeft {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-fadeOutLeft;
@@ -1405,8 +1405,8 @@
   }
 }
 .fx-fadeOutRight {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-fadeOutRight;
@@ -1433,8 +1433,8 @@
   }
 }
 .fx-fadeOutUp {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-fadeOutUp;
@@ -1461,8 +1461,8 @@
   }
 }
 .fx-rotateIn {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-rotateIn;
@@ -1495,8 +1495,8 @@
   }
 }
 .fx-rotateInDownLeft {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-rotateInDownLeft;
@@ -1529,8 +1529,8 @@
   }
 }
 .fx-rotateInDownRight {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-rotateInDownRight;
@@ -1563,8 +1563,8 @@
   }
 }
 .fx-rotateInUpLeft {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-rotateInUpLeft;
@@ -1597,8 +1597,8 @@
   }
 }
 .fx-rotateInUpRight {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-rotateInUpRight;
@@ -1631,8 +1631,8 @@
   }
 }
 .fx-rotateOut {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-rotateOut;
@@ -1661,8 +1661,8 @@
   }
 }
 .fx-rotateOutDownLeft {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-rotateOutDownLeft;
@@ -1691,8 +1691,8 @@
   }
 }
 .fx-rotateOutDownRight {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-rotateOutDownRight;
@@ -1721,8 +1721,8 @@
   }
 }
 .fx-rotateOutUpLeft {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-rotateOutUpLeft;
@@ -1751,8 +1751,8 @@
   }
 }
 .fx-rotateOutUpRight {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-rotateOutUpRight;
@@ -1781,8 +1781,8 @@
   }
 }
 .fx-zoomIn {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-zoomIn;
@@ -1809,8 +1809,8 @@
   }
 }
 .fx-zoomInDown {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-zoomInDown;
@@ -1851,8 +1851,8 @@
   }
 }
 .fx-zoomInLeft {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-zoomInLeft;
@@ -1891,8 +1891,8 @@
   }
 }
 .fx-zoomInRight {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-zoomInRight;
@@ -1933,8 +1933,8 @@
   }
 }
 .fx-zoomInUp {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-zoomInUp;
@@ -1973,8 +1973,8 @@
   }
 }
 .fx-zoomOut {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-zoomOut;
@@ -2005,8 +2005,8 @@
   }
 }
 .fx-zoomOutDown {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-zoomOutDown;
@@ -2049,8 +2049,8 @@
   }
 }
 .fx-zoomOutLeft {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-zoomOutLeft;
@@ -2085,8 +2085,8 @@
   }
 }
 .fx-zoomOutRight {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-zoomOutRight;
@@ -2121,8 +2121,8 @@
   }
 }
 .fx-zoomOutUp {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-zoomOutUp;
@@ -2165,8 +2165,8 @@
   }
 }
 .fx-slideInDown {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-slideInDown;
@@ -2197,8 +2197,8 @@
   }
 }
 .fx-slideInLeft {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-slideInLeft;
@@ -2229,8 +2229,8 @@
   }
 }
 .fx-slideInRight {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-slideInRight;
@@ -2261,8 +2261,8 @@
   }
 }
 .fx-slideInUp {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-slideInUp;
@@ -2293,8 +2293,8 @@
   }
 }
 .fx-slideOutDown {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-slideOutDown;
@@ -2325,8 +2325,8 @@
   }
 }
 .fx-slideOutLeft {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-slideOutLeft;
@@ -2357,8 +2357,8 @@
   }
 }
 .fx-slideOutRight {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-slideOutRight;
@@ -2389,8 +2389,8 @@
   }
 }
 .fx-slideOutUp {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-slideOutUp;
@@ -2421,8 +2421,8 @@
   }
 }
 .fx-perspectiveInDown {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-perspectiveInDown;
@@ -2455,8 +2455,8 @@
   }
 }
 .fx-perspectiveInLeft {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-perspectiveInLeft;
@@ -2489,8 +2489,8 @@
   }
 }
 .fx-perspectiveInRight {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-perspectiveInRight;
@@ -2523,8 +2523,8 @@
   }
 }
 .fx-perspectiveInUp {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-perspectiveInUp;
@@ -2557,8 +2557,8 @@
   }
 }
 .fx-perspectiveOutDown {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-perspectiveOutDown;
@@ -2591,8 +2591,8 @@
   }
 }
 .fx-perspectiveOutLeft {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-perspectiveOutLeft;
@@ -2625,8 +2625,8 @@
   }
 }
 .fx-perspectiveOutRight {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-perspectiveOutRight;
@@ -2659,8 +2659,8 @@
   }
 }
 .fx-perspectiveOutUp {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-perspectiveOutUp;
@@ -2693,8 +2693,8 @@
   }
 }
 .fx-tinInDown {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-tinInDown;
@@ -2741,8 +2741,8 @@
   }
 }
 .fx-tinInLeft {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-tinInLeft;
@@ -2789,8 +2789,8 @@
   }
 }
 .fx-tinInRight {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-tinInRight;
@@ -2837,8 +2837,8 @@
   }
 }
 .fx-tinInUp {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-tinInUp;
@@ -2885,8 +2885,8 @@
   }
 }
 .fx-tinOutDown {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-tinOutDown;
@@ -2933,8 +2933,8 @@
   }
 }
 .fx-tinOutLeft {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-tinOutLeft;
@@ -2981,8 +2981,8 @@
   }
 }
 .fx-tinOutRight {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-tinOutRight;
@@ -3029,8 +3029,8 @@
   }
 }
 .fx-tinOutUp {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-tinOutUp;
@@ -3077,8 +3077,8 @@
   }
 }
 .fx-spaceInDown {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-spaceInDown;
@@ -3111,8 +3111,8 @@
   }
 }
 .fx-spaceInLeft {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-spaceInLeft;
@@ -3145,8 +3145,8 @@
   }
 }
 .fx-spaceInRight {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-spaceInRight;
@@ -3179,8 +3179,8 @@
   }
 }
 .fx-spaceInUp {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-spaceInUp;
@@ -3213,8 +3213,8 @@
   }
 }
 .fx-spaceOutDown {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-spaceOutDown;
@@ -3247,8 +3247,8 @@
   }
 }
 .fx-spaceOutLeft {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-spaceOutLeft;
@@ -3281,8 +3281,8 @@
   }
 }
 .fx-spaceOutRight {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-spaceOutRight;
@@ -3315,8 +3315,8 @@
   }
 }
 .fx-spaceOutUp {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-spaceOutUp;
@@ -3349,8 +3349,8 @@
   }
 }
 .fx-flip {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-flip;
@@ -3423,8 +3423,8 @@
   }
 }
 .fx-flipInX {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-flipInX;
@@ -3489,8 +3489,8 @@
   }
 }
 .fx-flipInY {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-flipInY;
@@ -3555,8 +3555,8 @@
   }
 }
 .fx-flipOutX {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-flipOutX;
@@ -3597,8 +3597,8 @@
   }
 }
 .fx-flipOutY {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-flipOutY;
@@ -3639,8 +3639,8 @@
   }
 }
 .fx-lightSpeedIn {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-lightSpeedIn;
@@ -3689,8 +3689,8 @@
   }
 }
 .fx-lightSpeedOut {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-lightSpeedOut;
@@ -3719,8 +3719,8 @@
   }
 }
 .fx-rollIn {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-rollIn;
@@ -3751,8 +3751,8 @@
   }
 }
 .fx-rollOut {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-rollOut;
@@ -3779,8 +3779,8 @@
   }
 }
 .fx-vanishIn {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-vanishIn;
@@ -3817,8 +3817,8 @@
   }
 }
 .fx-vanishOut {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-vanishOut;
@@ -3853,8 +3853,8 @@
   }
 }
 .fx-swashIn {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-swashIn;
@@ -3895,8 +3895,8 @@
   }
 }
 .fx-swashOut {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-swashOut;
@@ -3939,8 +3939,8 @@
   }
 }
 .fx-foolishIn {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-foolishIn;
@@ -4027,8 +4027,8 @@
   }
 }
 .fx-foolishOut {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-foolishOut;
@@ -4117,8 +4117,8 @@
   }
 }
 .fx-holeIn {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-holeIn;
@@ -4151,8 +4151,8 @@
   }
 }
 .fx-holeOut {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-holeOut;
@@ -4185,8 +4185,8 @@
   }
 }
 .fx-bombOutLeft {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-bombOutLeft;
@@ -4245,8 +4245,8 @@
   }
 }
 .fx-bombOutRight {
-  -webkit-animation-duration: 2.8s;
-  animation-duration: 2.8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fx-bombOutRight;

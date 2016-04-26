@@ -8,7 +8,7 @@ Effect.less is a cross-browser CSS3 animation library with predefined animation 
 
 ### Basic usage
 
-1) Include the stylesheet on your document's "<head>"
+1) Include the stylesheet on your document's '<head>'
 
 ```html
 <head>

@@ -78,6 +78,198 @@
     transform: translate3d(0, -4px, 0);
   }
 }
+.fx-headShake {
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fx-headShake;
+  animation-name: fx-headShake;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes fx-headShake {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  6.5% {
+    -webkit-transform: translateX(-6px) rotateY(-20deg);
+    transform: translateX(-6px) rotateY(-20deg);
+  }
+  18.5% {
+    -webkit-transform: translateX(5px) rotateY(15deg);
+    transform: translateX(5px) rotateY(15deg);
+  }
+  31.5% {
+    -webkit-transform: translateX(-3px) rotateY(-10deg);
+    transform: translateX(-3px) rotateY(-10deg);
+  }
+  43.5% {
+    -webkit-transform: translateX(2px) rotateY(5deg);
+    transform: translateX(2px) rotateY(5deg);
+  }
+  50% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes fx-headShake {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  6.5% {
+    -webkit-transform: translateX(-6px) rotateY(-20deg);
+    transform: translateX(-6px) rotateY(-20deg);
+  }
+  18.5% {
+    -webkit-transform: translateX(5px) rotateY(15deg);
+    transform: translateX(5px) rotateY(15deg);
+  }
+  31.5% {
+    -webkit-transform: translateX(-3px) rotateY(-10deg);
+    transform: translateX(-3px) rotateY(-10deg);
+  }
+  43.5% {
+    -webkit-transform: translateX(2px) rotateY(5deg);
+    transform: translateX(2px) rotateY(5deg);
+  }
+  50% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.fx-hinge {
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fx-hinge;
+  animation-name: fx-hinge;
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes fx-hinge {
+  20%,
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 40deg);
+    transform: rotate3d(0, 0, 1, 40deg);
+  }
+  40%,
+  80% {
+    opacity: 1;
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 300px, 0);
+    transform: translate3d(0, 300px, 0);
+  }
+}
+@keyframes fx-hinge {
+  20%,
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 40deg);
+    transform: rotate3d(0, 0, 1, 40deg);
+  }
+  40%,
+  80% {
+    opacity: 1;
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 300px, 0);
+    transform: translate3d(0, 300px, 0);
+  }
+}
+.fx-jello {
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fx-jello;
+  animation-name: fx-jello;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+@-webkit-keyframes fx-jello {
+  from,
+  11.1%,
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+  22.2% {
+    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+    transform: skewX(-12.5deg) skewY(-12.5deg);
+  }
+  33.3% {
+    -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+    transform: skewX(6.25deg) skewY(6.25deg);
+  }
+  44.4% {
+    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+    transform: skewX(-3.125deg) skewY(-3.125deg);
+  }
+  55.5% {
+    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+    transform: skewX(1.5625deg) skewY(1.5625deg);
+  }
+  66.6% {
+    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  }
+  77.7% {
+    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
+    transform: skewX(0.390625deg) skewY(0.390625deg);
+  }
+  88.8% {
+    -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+  }
+}
+@keyframes fx-jello {
+  from,
+  11.1%,
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+  22.2% {
+    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+    transform: skewX(-12.5deg) skewY(-12.5deg);
+  }
+  33.3% {
+    -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+    transform: skewX(6.25deg) skewY(6.25deg);
+  }
+  44.4% {
+    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+    transform: skewX(-3.125deg) skewY(-3.125deg);
+  }
+  55.5% {
+    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+    transform: skewX(1.5625deg) skewY(1.5625deg);
+  }
+  66.6% {
+    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  }
+  77.7% {
+    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
+    transform: skewX(0.390625deg) skewY(0.390625deg);
+  }
+  88.8% {
+    -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+  }
+}
 .fx-pulse {
   -webkit-animation-duration: .8s;
   animation-duration: .8s;
@@ -232,68 +424,6 @@
   80% {
     -webkit-transform: translate3d(10px, 0, 0);
     transform: translate3d(10px, 0, 0);
-  }
-}
-.fx-headShake {
-  -webkit-animation-duration: .8s;
-  animation-duration: .8s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fx-headShake;
-  animation-name: fx-headShake;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-}
-@-webkit-keyframes fx-headShake {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  6.5% {
-    -webkit-transform: translateX(-6px) rotateY(-20deg);
-    transform: translateX(-6px) rotateY(-20deg);
-  }
-  18.5% {
-    -webkit-transform: translateX(5px) rotateY(15deg);
-    transform: translateX(5px) rotateY(15deg);
-  }
-  31.5% {
-    -webkit-transform: translateX(-3px) rotateY(-10deg);
-    transform: translateX(-3px) rotateY(-10deg);
-  }
-  43.5% {
-    -webkit-transform: translateX(2px) rotateY(5deg);
-    transform: translateX(2px) rotateY(5deg);
-  }
-  50% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-@keyframes fx-headShake {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  6.5% {
-    -webkit-transform: translateX(-6px) rotateY(-20deg);
-    transform: translateX(-6px) rotateY(-20deg);
-  }
-  18.5% {
-    -webkit-transform: translateX(5px) rotateY(15deg);
-    transform: translateX(5px) rotateY(15deg);
-  }
-  31.5% {
-    -webkit-transform: translateX(-3px) rotateY(-10deg);
-    transform: translateX(-3px) rotateY(-10deg);
-  }
-  43.5% {
-    -webkit-transform: translateX(2px) rotateY(5deg);
-    transform: translateX(2px) rotateY(5deg);
-  }
-  50% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
   }
 }
 .fx-swing {
@@ -480,136 +610,6 @@
   to {
     -webkit-transform: none;
     transform: none;
-  }
-}
-.fx-jello {
-  -webkit-animation-duration: .8s;
-  animation-duration: .8s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fx-jello;
-  animation-name: fx-jello;
-  -webkit-transform-origin: center;
-  transform-origin: center;
-}
-@-webkit-keyframes fx-jello {
-  from,
-  11.1%,
-  to {
-    -webkit-transform: none;
-    transform: none;
-  }
-  22.2% {
-    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
-    transform: skewX(-12.5deg) skewY(-12.5deg);
-  }
-  33.3% {
-    -webkit-transform: skewX(6.25deg) skewY(6.25deg);
-    transform: skewX(6.25deg) skewY(6.25deg);
-  }
-  44.4% {
-    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
-    transform: skewX(-3.125deg) skewY(-3.125deg);
-  }
-  55.5% {
-    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
-    transform: skewX(1.5625deg) skewY(1.5625deg);
-  }
-  66.6% {
-    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
-    transform: skewX(-0.78125deg) skewY(-0.78125deg);
-  }
-  77.7% {
-    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
-    transform: skewX(0.390625deg) skewY(0.390625deg);
-  }
-  88.8% {
-    -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
-    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
-  }
-}
-@keyframes fx-jello {
-  from,
-  11.1%,
-  to {
-    -webkit-transform: none;
-    transform: none;
-  }
-  22.2% {
-    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
-    transform: skewX(-12.5deg) skewY(-12.5deg);
-  }
-  33.3% {
-    -webkit-transform: skewX(6.25deg) skewY(6.25deg);
-    transform: skewX(6.25deg) skewY(6.25deg);
-  }
-  44.4% {
-    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
-    transform: skewX(-3.125deg) skewY(-3.125deg);
-  }
-  55.5% {
-    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
-    transform: skewX(1.5625deg) skewY(1.5625deg);
-  }
-  66.6% {
-    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
-    transform: skewX(-0.78125deg) skewY(-0.78125deg);
-  }
-  77.7% {
-    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
-    transform: skewX(0.390625deg) skewY(0.390625deg);
-  }
-  88.8% {
-    -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
-    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
-  }
-}
-.fx-hinge {
-  -webkit-animation-duration: .8s;
-  animation-duration: .8s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fx-hinge;
-  animation-name: fx-hinge;
-  -webkit-transform-origin: top left;
-  transform-origin: top left;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-}
-@-webkit-keyframes fx-hinge {
-  20%,
-  60% {
-    -webkit-transform: rotate3d(0, 0, 1, 40deg);
-    transform: rotate3d(0, 0, 1, 40deg);
-  }
-  40%,
-  80% {
-    opacity: 1;
-    -webkit-transform: rotate3d(0, 0, 1, 5deg);
-    transform: rotate3d(0, 0, 1, 5deg);
-  }
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 300px, 0);
-    transform: translate3d(0, 300px, 0);
-  }
-}
-@keyframes fx-hinge {
-  20%,
-  60% {
-    -webkit-transform: rotate3d(0, 0, 1, 40deg);
-    transform: rotate3d(0, 0, 1, 40deg);
-  }
-  40%,
-  80% {
-    opacity: 1;
-    -webkit-transform: rotate3d(0, 0, 1, 5deg);
-    transform: rotate3d(0, 0, 1, 5deg);
-  }
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 300px, 0);
-    transform: translate3d(0, 300px, 0);
   }
 }
 .fx-bounceIn {

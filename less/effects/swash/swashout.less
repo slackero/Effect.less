@@ -1,0 +1,19 @@
+.fx-swashOut {
+    .fx-animation();
+    .animation-name(fx-swashOut);
+    .transform-origin(center center);
+}
+.keyframes(fx-swashOut; {
+    0% {
+        .visible();
+        .transform(scale(1, 1));
+    }
+    80% {
+        .visible();
+        .transform(scale(0.9, 0.9));
+    }
+    100% {
+        .hidden();
+        .transform(scale(0, 0));
+    }
+});

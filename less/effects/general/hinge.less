@@ -1,0 +1,19 @@
+.fx-hinge {
+    .fx-animation();
+    .animation-name(fx-hinge);
+    .transform-origin(top left);
+    .animation-timing-function(ease-in-out);
+}
+.keyframes(fx-hinge; {
+    20%, 60% {
+        .transform(rotate3d(0, 0, 1, 40deg));
+    }
+    40%, 80% {
+        .visible();
+        .transform(rotate3d(0, 0, 1, 5deg));
+    }
+    to {
+        .hidden();
+        .transform(translate3d(0, 300px, 0));
+    }
+});

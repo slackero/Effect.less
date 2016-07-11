@@ -1,0 +1,14 @@
+.fx-rotateOutDownRight {
+    .fx-animation();
+    .animation-name(fx-rotateOutDownRight);
+    .transform-origin(right bottom);
+}
+.keyframes(fx-rotateOutDownRight; {
+    from {
+        .visible();
+    }
+    to {
+        .hidden();
+        .transform(rotate3d(0, 0, 1, -45deg));
+    }
+});

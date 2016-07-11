@@ -1,0 +1,33 @@
+.fx-foolishOut {
+    .fx-animation();
+    .animation-name(fx-foolishOut);
+}
+.keyframes(fx-foolishOut; {
+    0% {
+        .visible();
+        .transform-origin(50% 50%);
+        .transform(scale(1, 1) rotate(360deg));
+    }
+    20% {
+        .transform-origin(0% 0%);
+        .transform(scale(0.5, 0.5) rotate(0deg));
+    }
+    40% {
+        .transform-origin(100% 0%);
+        .transform(scale(0.5, 0.5) rotate(0deg));
+    }
+    60% {
+        .transform-origin(0%);
+        .transform(scale(0.5, 0.5) rotate(0deg));
+    }
+    80% {
+        .visible();
+        .transform-origin(0% 100%);
+        .transform(scale(0.5, 0.5) rotate(0deg));
+    }
+    100% {
+        .hidden();
+        .transform-origin(50% 50%);
+        .transform(scale(0, 0) rotate(0deg));
+    }
+});

@@ -1,0 +1,15 @@
+.fx-rotateInUpLeft {
+    .fx-animation();
+    .animation-name(fx-rotateInUpLeft);
+    .transform-origin(left bottom);
+}
+.keyframes(fx-rotateInUpLeft; {
+    from {
+        .hidden();
+        .transform(rotate3d(0, 0, 1, 45deg));
+    }
+    to {
+        .visible();
+        .transform(none);
+    }
+});

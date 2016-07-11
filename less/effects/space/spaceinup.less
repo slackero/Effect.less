@@ -1,0 +1,15 @@
+.fx-spaceInUp {
+    .fx-animation();
+    .animation-name(fx-spaceInUp);
+    .transform-origin(center top);
+}
+.keyframes(fx-spaceInUp; {
+    from {
+        .hidden();
+        .transform(scale(.2) translate(0%, -200%));
+    }
+    to {
+        .visible();
+        .transform(scale(1) translate(0%, 0%));
+    }
+});

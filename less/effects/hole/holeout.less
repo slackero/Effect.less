@@ -1,0 +1,15 @@
+.fx-holeOut {
+    .fx-animation();
+    .animation-name(fx-holeOut);
+    .transform-origin(center center);
+}
+.keyframes(fx-holeOut; {
+    from {
+        .visible();
+        .transform(scale(1, 1) rotateY(0deg));
+    }
+    to {
+        .hidden();
+        .transform(scale(0, 0) rotateY(180deg));
+    }
+});

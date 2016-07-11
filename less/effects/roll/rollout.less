@@ -1,0 +1,13 @@
+.fx-rollOut {
+    .fx-animation();
+    .animation-name(fx-rollOut);
+}
+.keyframes(fx-rollOut; {
+    from {
+        .visible();
+    }
+    to {
+        .hidden();
+        .transform(translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg));
+    }
+});

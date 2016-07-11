@@ -1,0 +1,36 @@
+//===========================================
+// Mixins
+//===========================================
+.keyframes(@name; @arguments) {
+    @-webkit-keyframes @name { @arguments(); }
+    @keyframes @name { @arguments(); }
+}
+.animation-name(@name) {
+    -webkit-animation-name: @name;
+    animation-name: @name;
+}
+.animation-timing-function(@string) {
+    -webkit-animation-timing-function: @string;
+    animation-timing-function: @string;
+}
+.transform(@string) {
+    -webkit-transform: @string;
+    transform: @string;
+}
+.transform-origin(@string) {
+    -webkit-transform-origin: @string;
+    transform-origin: @string;
+}
+.backface-visibility(@string) {
+    -webkit-backface-visibility: @string;
+    backface-visibility: @string;
+}
+.filter(@string) {
+    -webkit-filter: @string;
+}
+.hidden() {
+    opacity: 0;
+}
+.visible() {
+    opacity: 1;
+}

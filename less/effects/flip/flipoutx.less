@@ -1,0 +1,19 @@
+.fx-flipOutX {
+    .fx-animation();
+    .animation-name(fx-flipOutX);
+    .backface-visibility(visible);
+}
+.keyframes(fx-flipOutX; {
+    from {
+        .transform(perspective(400px));
+    }
+    30% {
+        .visible();
+        .transform(perspective(400px) rotate3d(1, 0, 0, -20deg));
+        opacity: 1;
+    }
+    to {
+        .hidden();
+        .transform(perspective(400px) rotate3d(1, 0, 0, 90deg));
+    }
+});

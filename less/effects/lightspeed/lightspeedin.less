@@ -1,0 +1,21 @@
+.fx-lightSpeedIn {
+    .fx-animation();
+    .animation-name(fx-lightSpeedIn);
+    .animation-timing-function(ease-out);
+}
+.keyframes(fx-lightSpeedIn; {
+    from {
+        .hidden();
+        .transform(translate3d(100%, 0, 0) skewX(-10deg));
+    }
+    60% {
+        .visible();
+        .transform(skewX(5deg));
+    }
+    80% {
+        .transform(skewX(-2deg));
+    }
+    to {
+        .transform(none);
+    }
+});

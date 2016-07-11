@@ -7,1856 +7,210 @@
   @license Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license.
 */
 
-//===========================================
-// Mixins
-//===========================================
-.keyframes(@name; @arguments) {
-    @-webkit-keyframes @name { @arguments(); }
-    @keyframes @name { @arguments(); }
-}
-.animation-name(@name) {
-    -webkit-animation-name: @name;
-    animation-name: @name;
-}
-.animation-timing-function(@string) {
-    -webkit-animation-timing-function: @string;
-    animation-timing-function: @string;
-}
-.transform(@string) {
-    -webkit-transform: @string;
-    transform: @string;
-}
-.transform-origin(@string) {
-    -webkit-transform-origin: @string;
-    transform-origin: @string;
-}
-.backface-visibility(@string) {
-    -webkit-backface-visibility: @string;
-    backface-visibility: @string;
-}
-.filter(@string) {
-    -webkit-filter: @string;
-}
-.hidden() {
-    opacity: 0;
-}
-.visible() {
-    opacity: 1;
-}
 
 //===========================================
-// Special
+// Mixins (is required)
 //===========================================
-.fx-animation() {
-    -webkit-animation-duration: .8s;
-    animation-duration: .8s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
-.fx-infinite {
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-}
+@import "less/mixins.less";
+
+
+//===========================================
+// Special (is required)
+//===========================================
+@import "less/special.less";
+
+
+//===========================================
+// All effects (are optional)
+//-------------------------------------------
+// Comment the line to disable an effect.
+// It is not useful to include every effect
+// because the final CSS might be huge for
+// just a tiny effect.
+//===========================================
+
 
 //===========================================
 // General (10)
 //===========================================
-.fx-bounce {
-    .fx-animation();
-    .animation-name(fx-bounce);
-    .transform-origin(center bottom);
-}
-.keyframes(fx-bounce; {
-    from, 20%, 53%, 80%, to {
-        .animation-timing-function(cubic-bezier(0.215, 0.610, 0.355, 1.000));
-        .transform(translate3d(0,0,0));
-    }
-    40%, 43% {
-        .animation-timing-function(cubic-bezier(0.755, 0.050, 0.855, 0.060));
-        .transform(translate3d(0, -30px, 0));
-    }
-    70% {
-        .animation-timing-function(cubic-bezier(0.755, 0.050, 0.855, 0.060));
-        .transform(translate3d(0, -15px, 0));
-    }
-    90% {
-        .transform(translate3d(0,-4px,0));
-    }
-});
-.fx-pulse {
-    .fx-animation();
-    .animation-name(fx-pulse);
-}
-.keyframes(fx-pulse; {
-    from {
-        .transform(scale3d(1, 1, 1));
-    }
-    50% {
-        .transform(scale3d(1.05, 1.05, 1.05));
-    }
-    to {
-        .transform(scale3d(1, 1, 1));
-    }
-});
-.fx-rubberBand {
-    .fx-animation();
-    .animation-name(fx-rubberBand);
-}
-.keyframes(fx-rubberBand; {
-    from {
-        .transform(scale3d(1, 1, 1));
-    }
-    30% {
-        .transform(scale3d(1.25, 0.75, 1));
-    }
-    40% {
-        .transform(scale3d(0.75, 1.25, 1));
-    }
-    50% {
-        .transform(scale3d(1.15, 0.85, 1));
-    }
-    65% {
-        .transform(scale3d(.95, 1.05, 1));
-    }
-    75% {
-        .transform(scale3d(1.05, .95, 1));
-    }
-    to {
-        .transform(scale3d(1, 1, 1));
-    }
-});
-.fx-shake {
-    .fx-animation();
-    .animation-name(fx-shake);
-}
-.keyframes(fx-shake; {
-    from, to {
-        .transform(translate3d(0, 0, 0));
-    }
-    10%, 30%, 50%, 70%, 90% {
-        .transform(translate3d(-10px, 0, 0));
-    }
-    20%, 40%, 60%, 80% {
-        .transform(translate3d(10px, 0, 0));
-    }
-});
-.fx-headShake {
-    .fx-animation();
-    .animation-name(fx-headShake);
-    .animation-timing-function(ease-in-out);
-}
-.keyframes(fx-headShake; {
-    0% {
-        .transform(translateX(0));
-    }
-    6.5% {
-        .transform(translateX(-6px) rotateY(-20deg));
-    }
-    18.5% {
-        .transform(translateX(5px) rotateY(15deg));
-    }
-    31.5% {
-        .transform(translateX(-3px) rotateY(-10deg));
-    }
-    43.5% {
-        .transform(translateX(2px) rotateY(5deg));
-    }
-    50% {
-        .transform(translateX(0));
-    }
-});
-.fx-swing {
-    .fx-animation();
-    .animation-name(fx-swing);
-    .transform-origin(top center);
-}
-.keyframes(fx-swing; {
-    20% {
-        .transform(rotate3d(0, 0, 1, 15deg));
-    }
-    40% {
-        .transform(rotate3d(0, 0, 1, -10deg));
-    }
-    60% {
-        .transform(rotate3d(0, 0, 1, 5deg));
-    }
-    80% {
-        .transform(rotate3d(0, 0, 1, -5deg));
-    }
-    to {
-        .transform(rotate3d(0, 0, 1, 0deg));
-    }
-});
-.fx-tada {
-    .fx-animation();
-    .animation-name(fx-tada);
-}
-.keyframes(fx-tada; {
-    from {
-        .transform(scale3d(1, 1, 1));
-    }
-    10%, 20% {
-        .transform(scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg));
-    }
-    30%, 50%, 70%, 90% {
-        .transform(scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg));
-    }
-    40%, 60%, 80% {
-        .transform(scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg));
-    }
-    to {
-        .transform(scale3d(1, 1, 1));
-    }
-});
-.fx-wobble {
-    .fx-animation();
-    .animation-name(fx-wobble);
-}
-.keyframes(fx-wobble; {
-    from {
-        .transform(none);
-    }
-    15% {
-        .transform(translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg));
-    }
-    30% {
-        .transform(translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg));
-    }
-    45% {
-        .transform(translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg));
-    }
-    60% {
-        .transform(translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg));
-    }
-    75% {
-        .transform(translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg));
-    }
-    to {
-        .transform(none);
-    }
-});
-.fx-jello {
-    .fx-animation();
-    .animation-name(fx-jello);
-    .transform-origin(center);
-}
-.keyframes(fx-jello; {
-    from, 11.1%, to {
-        .transform(none);
-    }
-    22.2% {
-        .transform(skewX(-12.5deg) skewY(-12.5deg));
-    }
-    33.3% {
-        .transform(skewX(6.25deg) skewY(6.25deg));
-    }
-    44.4% {
-        .transform(skewX(-3.125deg) skewY(-3.125deg));
-    }
-    55.5% {
-        .transform(skewX(1.5625deg) skewY(1.5625deg));
-    }
-    66.6% {
-        .transform(skewX(-0.78125deg) skewY(-0.78125deg));
-    }
-    77.7% {
-        .transform(skewX(0.390625deg) skewY(0.390625deg));
-    }
-    88.8% {
-        .transform(skewX(-0.1953125deg) skewY(-0.1953125deg));
-    }
-});
-.fx-hinge {
-    .fx-animation();
-    .animation-name(fx-hinge);
-    .transform-origin(top left);
-    .animation-timing-function(ease-in-out);
-}
-.keyframes(fx-hinge; {
-    20%, 60% {
-        .transform(rotate3d(0, 0, 1, 40deg));
-    }
-    40%, 80% {
-        .visible();
-        .transform(rotate3d(0, 0, 1, 5deg));
-    }
-    to {
-        .hidden();
-        .transform(translate3d(0, 300px, 0));
-    }
-});
+@import "less/effects/general/bounce.less";
+@import "less/effects/general/headshake.less";
+@import "less/effects/general/hinge.less";
+@import "less/effects/general/jello.less";
+@import "less/effects/general/pulse.less";
+@import "less/effects/general/rubberband.less";
+@import "less/effects/general/shake.less";
+@import "less/effects/general/swing.less";
+@import "less/effects/general/tada.less";
+@import "less/effects/general/wobble.less";
+
+
 //===========================================
 // Bounce In & Out (10)
 //===========================================
-.fx-bounceIn {
-    .fx-animation();
-    .animation-name(fx-bounceIn);
-}
-.keyframes(fx-bounceIn; {
-    from, 20%, 40%, 60%, 80%, to {
-        .animation-timing-function(cubic-bezier(0.215, 0.610, 0.355, 1.000));
-    }
-    0% {
-        .hidden();
-        .transform(scale3d(.3, .3, .3));
-    }
-    20% {
-        .transform(scale3d(1.1, 1.1, 1.1));
-    }
-    40% {
-        .transform(scale3d(.9, .9, .9));
-    }
-    60% {
-        .visible();
-        .transform(scale3d(1.03, 1.03, 1.03));
-    }
-    80% {
-        .transform(scale3d(.97, .97, .97));
-    }
-    to {
-        .transform(scale3d(1, 1, 1));
-    }
-});
-.fx-bounceInDown {
-    .fx-animation();
-    .animation-name(fx-bounceInDown);
-}
-.keyframes(fx-bounceInDown; {
-    from, 60%, 75%, 90%, to {
-        .animation-timing-function(cubic-bezier(0.215, 0.610, 0.355, 1.000));
-    }
-    0% {
-        .hidden();
-        .transform(translate3d(0, -3000px, 0));
-    }
-    60% {
-        .visible();
-        .transform(translate3d(0, 25px, 0));
-    }
-    75% {
-        .transform(translate3d(0, -10px, 0));
-    }
-    90% {
-        .transform(translate3d(0, 5px, 0));
-    }
-    to {
-        .transform(none);
-    }
-});
-.fx-bounceInLeft {
-    .fx-animation();
-    .animation-name(fx-bounceInLeft);
-}
-.keyframes(fx-bounceInLeft; {
-    from, 60%, 75%, 90%, to {
-        .animation-timing-function(cubic-bezier(0.215, 0.610, 0.355, 1.000));
-    }
-    0% {
-        .hidden();
-        .transform(translate3d(-100%, 0, 0));
-    }
-    60% {
-        .visible();
-        .transform(translate3d(25px, 0, 0));
-    }
-    75% {
-        .transform(translate3d(-10px, 0, 0));
-    }
-    90% {
-        .transform(translate3d(5px, 0, 0));
-    }
-    to {
-        .transform(none);
-    }
-});
-.fx-bounceInRight {
-    .fx-animation();
-    .animation-name(fx-bounceInRight);
-}
-.keyframes(fx-bounceInRight; {
-    from, 60%, 75%, 90%, to {
-        .animation-timing-function(cubic-bezier(0.215, 0.610, 0.355, 1.000));
-    }
-    from {
-        .hidden();
-        .transform(translate3d(3000px, 0, 0));
-    }
-    60% {
-        .visible();
-        .transform(translate3d(-25px, 0, 0));
-    }
-    75% {
-        .transform(translate3d(10px, 0, 0));
-    }
-    90% {
-        .transform(translate3d(-5px, 0, 0));
-    }
-    to {
-        .transform(none);
-    }
-});
-.fx-bounceInUp {
-    .fx-animation();
-    .animation-name(fx-bounceInUp);
-}
-.keyframes(fx-bounceInUp; {
-    from, 60%, 75%, 90%, to {
-        .animation-timing-function(cubic-bezier(0.215, 0.610, 0.355, 1.000));
-    }
-    from {
-        .hidden();
-        .transform(translate3d(0, 3000px, 0));
-    }
-    60% {
-        .visible();
-        .transform(translate3d(0, -20px, 0));
-    }
-    75% {
-        .transform(translate3d(0, 10px, 0));
-    }
-    90% {
-        .transform(translate3d(0, -5px, 0));
-    }
-    to {
-        .transform(translate3d(0, 0, 0));
-    }
-});
-.fx-bounceOut {
-    .fx-animation();
-    .animation-name(fx-bounceOut);
-}
-.keyframes(fx-bounceOut; {
-    20% {
-        .transform(scale3d(.9, .9, .9));
-    }
-    50%, 55% {
-        .visible();
-        .transform(scale3d(1.1, 1.1, 1.1));
-    }
-    to {
-        .hidden();
-        .transform(scale3d(.3, .3, .3));
-    }
-});
-.fx-bounceOutDown {
-    .fx-animation();
-    .animation-name(fx-bounceOutDown);
-}
-.keyframes(fx-bounceOutDown; {
-    20% {
-        .transform(translate3d(0, 10px, 0));
-    }
-    40%, 45% {
-        .visible();
-        .transform(translate3d(0, -20px, 0));
-    }
-    to {
-        .hidden();
-        .transform(translate3d(0, 2000px, 0));
-    }
-});
-.fx-bounceOutLeft {
-    .fx-animation();
-    .animation-name(fx-bounceOutLeft);
-}
-.keyframes(fx-bounceOutLeft; {
-    20% {
-        .visible();
-        .transform(translate3d(20px, 0, 0));
-    }
-    to {
-        .hidden();
-        .transform(translate3d(-100%, 0, 0));
-    }
-});
-.fx-bounceOutRight {
-    .fx-animation();
-    .animation-name(fx-bounceOutRight);
-}
-.keyframes(fx-bounceOutRight; {
-    20% {
-        .visible();
-        .transform(translate3d(-20px, 0, 0));
-    }
-    to {
-        .hidden();
-        .transform(translate3d(2000px, 0, 0));
-    }
-});
-.fx-bounceOutUp {
-    .fx-animation();
-    .animation-name(fx-bounceOutUp);
-}
-.keyframes(fx-bounceOutUp; {
-    20% {
-        .transform(translate3d(0, -10px, 0));
-    }
-    40%, 45% {
-        .visible();
-        .transform(translate3d(0, 20px, 0));
-}
-    to {
-        .hidden();
-        .transform(translate3d(0, -2000px, 0));
-    }
-});
+@import "less/effects/bounce/bouncein.less";
+@import "less/effects/bounce/bounceindown.less";
+@import "less/effects/bounce/bounceinleft.less";
+@import "less/effects/bounce/bounceinright.less";
+@import "less/effects/bounce/bounceinup.less";
+@import "less/effects/bounce/bounceout.less";
+@import "less/effects/bounce/bounceoutdown.less";
+@import "less/effects/bounce/bounceoutleft.less";
+@import "less/effects/bounce/bounceoutright.less";
+@import "less/effects/bounce/bounceoutup.less";
+
+
 //===========================================
 // Fade In & Out (10)
 //===========================================
-.fx-fadeIn {
-    .fx-animation();
-    .animation-name(fx-fadeIn);
-}
-.keyframes(fx-fadeIn; {
-    from {
-        .hidden();
-    }
-    to {
-        .visible();
-    }
-});
-.fx-fadeInDown {
-    .fx-animation();
-    .animation-name(fx-fadeInDown);
-}
-.keyframes(fx-fadeInDown; {
-    from {
-        .hidden();
-        .transform(translate3d(0, -100%, 0));
-    }
-    to {
-        .visible();
-        .transform(none);
-    }
-});
-.fx-fadeInLeft {
-    .fx-animation();
-    .animation-name(fx-fadeInLeft);
-}
-.keyframes(fx-fadeInLeft; {
-    from {
-        .hidden();
-        .transform(translate3d(-100%, 0, 0));
-    }
-    to {
-        .visible();
-        .transform(none);
-    }
-});
-.fx-fadeInRight {
-    .fx-animation();
-    .animation-name(fx-fadeInRight);
-}
-.keyframes(fx-fadeInRight; {
-    from {
-        .hidden();
-        .transform(translate3d(100%, 0, 0));
-    }
-    to {
-        .visible();
-        .transform(none);
-    }
-});
-.fx-fadeInUp {
-    .fx-animation();
-    .animation-name(fx-fadeInUp);
-}
-.keyframes(fx-fadeInUp; {
-    from {
-        .hidden();
-        .transform(translate3d(0, 100%, 0));
-    }
-    to {
-        .visible();
-        .transform(none);
-    }
-});
-.fx-fadeOut {
-    .fx-animation();
-    .animation-name(fx-fadeOut);
-}
-.keyframes(fx-fadeOut; {
-    from {
-        .visible();
-    }
-    to {
-        .hidden();
-    }
-});
-.fx-fadeOutDown {
-    .fx-animation();
-    .animation-name(fx-fadeOutDown);
-}
-.keyframes(fx-fadeOutDown; {
-    from {
-        .visible();
-    }
-    to {
-        .hidden();
-        .transform(translate3d(0, 100%, 0));
-    }
-});
-.fx-fadeOutLeft {
-    .fx-animation();
-    .animation-name(fx-fadeOutLeft);
-}
-.keyframes(fx-fadeOutLeft; {
-    from {
-        .visible();
-    }
-    to {
-        .hidden();
-        .transform(translate3d(-100%, 0, 0));
-    }
-});
-.fx-fadeOutRight {
-    .fx-animation();
-    .animation-name(fx-fadeOutRight);
-}
-.keyframes(fx-fadeOutRight; {
-    from {
-        .visible();
-    }
-    to {
-        .hidden();
-        .transform(translate3d(100%, 0, 0));
-    }
-});
-.fx-fadeOutUp {
-    .fx-animation();
-    .animation-name(fx-fadeOutUp);
-}
-.keyframes(fx-fadeOutUp; {
-    from {
-        .visible();
-    }
-    to {
-        .hidden();
-        .transform(translate3d(0, -100%, 0));
-    }
-});
+@import "less/effects/fade/fadein.less";
+@import "less/effects/fade/fadeindown.less";
+@import "less/effects/fade/fadeinleft.less";
+@import "less/effects/fade/fadeinright.less";
+@import "less/effects/fade/fadeinup.less";
+@import "less/effects/fade/fadeout.less";
+@import "less/effects/fade/fadeoutdown.less";
+@import "less/effects/fade/fadeoutleft.less";
+@import "less/effects/fade/fadeoutright.less";
+@import "less/effects/fade/fadeoutup.less";
+
+
 //===========================================
 // Rotate In & Out (10)
 //===========================================
-.fx-rotateIn {
-    .fx-animation();
-    .animation-name(fx-rotateIn);
-    .transform-origin(center);
-}
-.keyframes(fx-rotateIn; {
-    from {
-        .hidden();
-        .transform(rotate3d(0, 0, 1, -200deg));
-    }
-    to {
-        .visible();
-        .transform(none);
-    }
-});
-.fx-rotateInDownLeft {
-    .fx-animation();
-    .animation-name(fx-rotateInDownLeft);
-    .transform-origin(left bottom);
-}
-.keyframes(fx-rotateInDownLeft; {
-    from {
-        .hidden();
-        .transform(rotate3d(0, 0, 1, -45deg));
-    }
-    to {
-        .visible();
-        .transform(none);
-    }
-});
-.fx-rotateInDownRight {
-    .fx-animation();
-    .animation-name(fx-rotateInDownRight);
-    .transform-origin(right bottom);
-}
-.keyframes(fx-rotateInDownRight; {
-    from {
-        .hidden();
-        .transform(rotate3d(0, 0, 1, 45deg));
-    }
-    to {
-        .visible();
-        .transform(none);
-    }
-});
-.fx-rotateInUpLeft {
-    .fx-animation();
-    .animation-name(fx-rotateInUpLeft);
-    .transform-origin(left bottom);
-}
-.keyframes(fx-rotateInUpLeft; {
-    from {
-        .hidden();
-        .transform(rotate3d(0, 0, 1, 45deg));
-    }
-    to {
-        .visible();
-        .transform(none);
-    }
-});
-.fx-rotateInUpRight {
-    .fx-animation();
-    .animation-name(fx-rotateInUpRight);
-    .transform-origin(right bottom);
-}
-.keyframes(fx-rotateInUpRight; {
-    from {
-        .hidden();
-        .transform(rotate3d(0, 0, 1, -90deg));
-    }
-    to {
-        .visible();
-        .transform(none);
-    }
-});
-.fx-rotateOut {
-    .fx-animation();
-    .animation-name(fx-rotateOut);
-    .transform-origin(center);
-}
-.keyframes(fx-rotateOut; {
-    from {
-        .visible();
-    }
-    to {
-        .hidden();
-        .transform(rotate3d(0, 0, 1, 200deg));
-    }
-});
-.fx-rotateOutDownLeft {
-    .fx-animation();
-    .animation-name(fx-rotateOutDownLeft);
-    .transform-origin(left bottom);
-}
-.keyframes(fx-rotateOutDownLeft; {
-    from {
-        .visible();
-    }
-    to {
-        .hidden();
-        .transform(rotate3d(0, 0, 1, 45deg));
-    }
-});
-.fx-rotateOutDownRight {
-    .fx-animation();
-    .animation-name(fx-rotateOutDownRight);
-    .transform-origin(right bottom);
-}
-.keyframes(fx-rotateOutDownRight; {
-    from {
-        .visible();
-    }
-    to {
-        .hidden();
-        .transform(rotate3d(0, 0, 1, -45deg));
-    }
-});
-.fx-rotateOutUpLeft {
-    .fx-animation();
-    .animation-name(fx-rotateOutUpLeft);
-    .transform-origin(left bottom);
-}
-.keyframes(fx-rotateOutUpLeft; {
-    from {
-        .visible();
-    }
-    to {
-        .hidden();
-        .transform(rotate3d(0, 0, 1, -45deg));
-    }
-});
-.fx-rotateOutUpRight {
-    .fx-animation();
-    .animation-name(fx-rotateOutUpRight);
-    .transform-origin(right bottom);
-}
-.keyframes(fx-rotateOutUpRight; {
-    from {
-        .visible();
-    }
-    to {
-        .hidden();
-        .transform(rotate3d(0, 0, 1, 90deg));
-    }
-});
+@import "less/effects/rotate/rotatein.less";
+@import "less/effects/rotate/rotateindownleft.less";
+@import "less/effects/rotate/rotateindownright.less";
+@import "less/effects/rotate/rotateinupleft.less";
+@import "less/effects/rotate/rotateinupright.less";
+@import "less/effects/rotate/rotateout.less";
+@import "less/effects/rotate/rotateoutdownleft.less";
+@import "less/effects/rotate/rotateoutdownright.less";
+@import "less/effects/rotate/rotateoutupleft.less";
+@import "less/effects/rotate/rotateoutupright.less";
+
+
 //===========================================
 // Zoom In & Out (10)
 //===========================================
-.fx-zoomIn {
-    .fx-animation();
-    .animation-name(fx-zoomIn);
-}
-.keyframes(fx-zoomIn; {
-    from {
-        .hidden();
-        .transform(scale3d(.3, .3, .3));
-    }
-    50% {
-        .visible();
-    }
-});
-.fx-zoomInDown {
-    .fx-animation();
-    .animation-name(fx-zoomInDown);
-    .transform-origin(top left);
-}
-.keyframes(fx-zoomInDown; {
-    from {
-        .hidden();
-        .animation-timing-function(cubic-bezier(0.550, 0.055, 0.675, 0.190));
-        .transform(scale3d(.1, .1, .1) translate3d(0, -1000px, 0));
-    }
-    60% {
-        .visible();
-        .animation-timing-function(cubic-bezier(0.175, 0.885, 0.320, 1));
-        .transform(scale3d(.475, .475, .475) translate3d(0, 60px, 0));
-    }
-});
-.fx-zoomInLeft {
-    .fx-animation();
-    .animation-name(fx-zoomInLeft);
-}
-.keyframes(fx-zoomInLeft; {
-    from {
-        .hidden();
-        .animation-timing-function(cubic-bezier(0.550, 0.055, 0.675, 0.190));
-        .transform(scale3d(.1, .1, .1) translate3d(-1000px, 0, 0));
-    }
-    60% {
-        .visible();
-        .animation-timing-function(cubic-bezier(0.175, 0.885, 0.320, 1));
-        .transform(scale3d(.475, .475, .475) translate3d(10px, 0, 0));
-    }
-});
-.fx-zoomInRight {
-    .fx-animation();
-    .animation-name(fx-zoomInRight);
-    .transform-origin(top left);
-}
-.keyframes(fx-zoomInRight; {
-    from {
-        .hidden();
-        .animation-timing-function(cubic-bezier(0.550, 0.055, 0.675, 0.190));
-        .transform(scale3d(.1, .1, .1) translate3d(1000px, 0, 0));
-    }
-    60% {
-        .visible();
-        .animation-timing-function(cubic-bezier(0.175, 0.885, 0.320, 1));
-        .transform(scale3d(.475, .475, .475) translate3d(-10px, 0, 0));
-    }
-});
-.fx-zoomInUp {
-    .fx-animation();
-    .animation-name(fx-zoomInUp);
-}
-.keyframes(fx-zoomInUp; {
-    from {
-        .hidden();
-        .animation-timing-function(cubic-bezier(0.550, 0.055, 0.675, 0.190));
-        .transform(scale3d(.1, .1, .1) translate3d(0, 1000px, 0));
-    }
-    60% {
-        .visible();
-        .animation-timing-function(cubic-bezier(0.175, 0.885, 0.320, 1));
-        .transform(scale3d(.475, .475, .475) translate3d(0, -60px, 0));
-    }
-});
-.fx-zoomOut {
-    .fx-animation();
-    .animation-name(fx-zoomOut);
-}
-.keyframes(fx-zoomOut; {
-    from {
-        .visible();
-    }
-    50% {
-        .transform(scale3d(.3, .3, .3));
-    }
-    to {
-        .hidden();
-    }
-});
-.fx-zoomOutDown {
-    .fx-animation();
-    .animation-name(fx-zoomOutDown);
-}
-.keyframes(fx-zoomOutDown; {
-    40% {
-        .visible();
-        .animation-timing-function(cubic-bezier(0.550, 0.055, 0.675, 0.190));
-        .transform(scale3d(.475, .475, .475) translate3d(0, -60px, 0));
-    }
-    to {
-        .hidden();
-        .animation-timing-function(cubic-bezier(0.175, 0.885, 0.320, 1));
-        .transform-origin(center bottom);
-        .transform(scale3d(.1, .1, .1) translate3d(0, 2000px, 0));
-    }
-});
-.fx-zoomOutLeft {
-    .fx-animation();
-    .animation-name(fx-zoomOutLeft);
-}
-.keyframes(fx-zoomOutLeft; {
-    40% {
-        .visible();
-        .transform(scale3d(.475, .475, .475) translate3d(42px, 0, 0));
-    }
-    to {
-        .hidden();
-        .transform-origin(left center);
-        .transform(scale(.1) translate3d(-2000px, 0, 0));
-    }
-});
-.fx-zoomOutRight {
-    .fx-animation();
-    .animation-name(fx-zoomOutRight);
-}
-.keyframes(fx-zoomOutRight; {
-    40% {
-        .visible();
-        .transform(scale3d(.475, .475, .475) translate3d(-42px, 0, 0));
-    }
-    to {
-        .hidden();
-        .transform-origin(right center);
-        .transform(scale(.1) translate3d(2000px, 0, 0));
-    }
-});
-.fx-zoomOutUp {
-    .fx-animation();
-    .animation-name(fx-zoomOutUp);
-}
-.keyframes(fx-zoomOutUp; {
-    40% {
-        .visible();
-        .animation-timing-function(cubic-bezier(0.550, 0.055, 0.675, 0.190));
-        .transform(scale3d(.475, .475, .475) translate3d(0, 60px, 0));
-    }
-    to {
-        .hidden();
-        .animation-timing-function(cubic-bezier(0.175, 0.885, 0.320, 1));
-        .transform-origin(center bottom);
-        .transform(scale3d(.1, .1, .1) translate3d(0, -4000px, 0));
-    }
-});
+@import "less/effects/zoom/zoomin.less";
+@import "less/effects/zoom/zoomindown.less";
+@import "less/effects/zoom/zoominleft.less";
+@import "less/effects/zoom/zoominright.less";
+@import "less/effects/zoom/zoominup.less";
+@import "less/effects/zoom/zoomout.less";
+@import "less/effects/zoom/zoomoutdown.less";
+@import "less/effects/zoom/zoomoutleft.less";
+@import "less/effects/zoom/zoomoutright.less";
+@import "less/effects/zoom/zoomoutup.less";
+
+
 //===========================================
 // Slide In & Out (8)
 //===========================================
-.fx-slideInDown {
-    .fx-animation();
-    .animation-name(fx-slideInDown);
-}
-.keyframes(fx-slideInDown; {
-    from {
-        .hidden();
-        .transform(translate3d(0, -100%, 0));
-    }
-    to {
-        .visible();
-        .transform(translate3d(0, 0, 0));
-    }
-});
-.fx-slideInLeft {
-    .fx-animation();
-    .animation-name(fx-slideInLeft);
-}
-.keyframes(fx-slideInLeft; {
-    from {
-        .hidden();
-        .transform(translate3d(-100%, 0, 0));
-    }
-    to {
-        .visible();
-        .transform(translate3d(0, 0, 0));
-    }
-});
-.fx-slideInRight {
-    .fx-animation();
-    .animation-name(fx-slideInRight);
-}
-.keyframes(fx-slideInRight; {
-    from {
-        .hidden();
-        .transform(translate3d(100%, 0, 0));
-    }
-    to {
-        .visible();
-        .transform(translate3d(0, 0, 0));
-    }
-});
-.fx-slideInUp {
-    .fx-animation();
-    .animation-name(fx-slideInUp);
-}
-.keyframes(fx-slideInUp; {
-    from {
-        .hidden();
-        .transform(translate3d(0, 100%, 0));
-    }
-    to {
-        .visible();
-        .transform(translate3d(0, 0, 0));
-    }
-});
-.fx-slideOutDown {
-    .fx-animation();
-    .animation-name(fx-slideOutDown);
-}
-.keyframes(fx-slideOutDown; {
-    from {
-        .visible();
-        .transform(translate3d(0, 0, 0));
-    }
-    to {
-        .hidden();
-        .transform(translate3d(0, 100%, 0));
-    }
-});
-.fx-slideOutLeft {
-    .fx-animation();
-    .animation-name(fx-slideOutLeft);
-}
-.keyframes(fx-slideOutLeft; {
-    from {
-        .visible();
-        .transform(translate3d(0, 0, 0));
-    }
-    to {
-        .hidden();
-        .transform(translate3d(-100%, 0, 0));
-    }
-});
-.fx-slideOutRight {
-    .fx-animation();
-    .animation-name(fx-slideOutRight);
-}
-.keyframes(fx-slideOutRight; {
-    from {
-        .visible();
-        .transform(translate3d(0, 0, 0));
-    }
-    to {
-        .hidden();
-        .transform(translate3d(100%, 0, 0));
-    }
-});
-.fx-slideOutUp {
-    .fx-animation();
-    .animation-name(fx-slideOutUp);
-}
-.keyframes(fx-slideOutUp; {
-    from {
-        .visible();
-        .transform(translate3d(0, 0, 0));
-    }
-    to {
-        .hidden();
-        .transform(translate3d(0, -100%, 0));
-    }
-});
+@import "less/effects/slide/slideindown.less";
+@import "less/effects/slide/slideinleft.less";
+@import "less/effects/slide/slideinright.less";
+@import "less/effects/slide/slideinup.less";
+@import "less/effects/slide/slideoutdown.less";
+@import "less/effects/slide/slideoutleft.less";
+@import "less/effects/slide/slideoutright.less";
+@import "less/effects/slide/slideoutup.less";
+
+
 //===========================================
 // Perspective In & Out (8)
 //===========================================
-.fx-perspectiveInDown {
-    .fx-animation();
-    .animation-name(fx-perspectiveInDown);
-    .transform-origin(bottom right);
-}
-.keyframes(fx-perspectiveInDown; {
-    from {
-        .hidden();
-        .transform(perspective(800px) rotateX(-180deg));
-    }
-    to {
-        .visible();
-        .transform(perspective(800px) rotateX(0deg));
-    }
-});
-.fx-perspectiveInLeft {
-    .fx-animation();
-    .animation-name(fx-perspectiveInLeft);
-    .transform-origin(top left);
-}
-.keyframes(fx-perspectiveInLeft; {
-    from {
-        .hidden();
-        .transform(perspective(800px) rotateY(-180deg));
-    }
-    to {
-        .visible();
-        .transform(perspective(800px) rotateY(0deg));
-    }
-});
-.fx-perspectiveInRight {
-    .fx-animation();
-    .animation-name(fx-perspectiveInRight);
-    .transform-origin(top right);
-}
-.keyframes(fx-perspectiveInRight; {
-    from {
-        .hidden();
-        .transform(perspective(800px) rotateY(180deg));
-    }
-    to {
-        .visible();
-        .transform(perspective(800px) rotateY(0deg));
-    }
-});
-.fx-perspectiveInUp {
-    .fx-animation();
-    .animation-name(fx-perspectiveInUp);
-    .transform-origin(top right);
-}
-.keyframes(fx-perspectiveInUp; {
-    from {
-        .hidden();
-        .transform(perspective(800px) rotateX(180deg));
-    }
-    to {
-        .visible();
-        .transform(perspective(800px) rotateX(0deg));
-    }
-});
-.fx-perspectiveOutDown {
-    .fx-animation();
-    .animation-name(fx-perspectiveOutDown);
-    .transform-origin(bottom right);
-}
-.keyframes(fx-perspectiveOutDown; {
-    from {
-        .visible();
-        .transform(perspective(800px) rotateX(0deg));
-    }
-    to {
-        .hidden();
-        .transform(perspective(800px) rotateX(-180deg));
-    }
-});
-.fx-perspectiveOutLeft {
-    .fx-animation();
-    .animation-name(fx-perspectiveOutLeft);
-    .transform-origin(top left);
-}
-.keyframes(fx-perspectiveOutLeft; {
-    from {
-        .visible();
-        .transform(perspective(800px) rotateY(0deg));
-    }
-    to {
-        .hidden();
-        .transform(perspective(800px) rotateY(-180deg));
-    }
-});
-.fx-perspectiveOutRight {
-    .fx-animation();
-    .animation-name(fx-perspectiveOutRight);
-    .transform-origin(top right);
-}
-.keyframes(fx-perspectiveOutRight; {
-    from {
-        .visible();
-        .transform(perspective(800px) rotateY(0deg));
-    }
-    to {
-        .hidden();
-        .transform(perspective(800px) rotateY(180deg));
-    }
-});
-.fx-perspectiveOutUp {
-    .fx-animation();
-    .animation-name(fx-perspectiveOutUp);
-    .transform-origin(top right);
-}
-.keyframes(fx-perspectiveOutUp; {
-    from {
-        .visible();
-        .transform(perspective(800px) rotateX(0deg));
-    }
-    to {
-        .hidden();
-        .transform(perspective(800px) rotateX(180deg));
-    }
-});
+@import "less/effects/perspective/perspectiveindown.less";
+@import "less/effects/perspective/perspectiveinleft.less";
+@import "less/effects/perspective/perspectiveinright.less";
+@import "less/effects/perspective/perspectiveinup.less";
+@import "less/effects/perspective/perspectiveoutdown.less";
+@import "less/effects/perspective/perspectiveoutleft.less";
+@import "less/effects/perspective/perspectiveoutright.less";
+@import "less/effects/perspective/perspectiveoutup.less";
+
+
 //===========================================
 // Tin In & Out (8)
 //===========================================
-.fx-tinInDown {
-    .fx-animation();
-    .animation-name(fx-tinInDown);
-}
-.keyframes(fx-tinInDown; {
-    0% {
-        .hidden();
-        .transform(scale(1, 1) translateY(900%));
-    }
-    50%, 70%, 90% {
-        .visible();
-        .transform(scale(1.1, 1.1) translateY(0));
-    }
-    60%, 80%, 100% {
-        .transform(scale(1, 1) translateY(0));
-    }
-});
-.fx-tinInLeft {
-    .fx-animation();
-    .animation-name(fx-tinInLeft);
-}
-.keyframes(fx-tinInLeft; {
-    0% {
-        .hidden();
-        .transform(scale(1, 1) translateX(-900%));
-    }
-    50%, 70%, 90% {
-        .visible();
-        .transform(scale(1.1, 1.1) translateX(0));
-    }
-    60%, 80%, 100% {
-        .transform(scale(1, 1) translateX(0));
-    }
-});
-.fx-tinInRight {
-    .fx-animation();
-    .animation-name(fx-tinInRight);
-}
-.keyframes(fx-tinInRight; {
-    0% {
-        .hidden();
-        .transform(scale(1, 1) translateX(900%));
-    }
-    50%, 70%, 90% {
-        .visible();
-        .transform(scale(1.1, 1.1) translateX(0));
-    }
-    60%, 80%, 100% {
-        .transform(scale(1, 1) translateX(0));
-    }
-});
-.fx-tinInUp {
-    .fx-animation();
-    .animation-name(fx-tinInUp);
-}
-.keyframes(fx-tinInUp; {
-    0% {
-        .hidden();
-        .transform(scale(1, 1) translateY(-900%));
-    }
-    50%, 70%, 90% {
-        .visible();
-        .transform(scale(1.1, 1.1) translateY(0));
-    }
-    60%, 80%, 100% {
-        .transform(scale(1, 1) translateY(0));
-    }
-});
-.fx-tinOutDown {
-    .fx-animation();
-    .animation-name(fx-tinOutDown);
-}
-.keyframes(fx-tinOutDown; {
-    0%, 20%, 40%, 50% {
-        .visible();
-        .transform(scale(1, 1) translateY(0));
-    }
-    10%, 30% {
-        .transform(scale(1.1, 1.1) translateY(0));
-    }
-    100% {
-        .hidden();
-        .transform(scale(1, 1) translateY(900%));
-    }
-});
-.fx-tinOutLeft {
-    .fx-animation();
-    .animation-name(fx-tinOutLeft);
-}
-.keyframes(fx-tinOutLeft; {
-    0%, 20%, 40%, 50% {
-        .visible();
-        .transform(scale(1, 1) translateX(0));
-    }
-    10%, 30% {
-        .transform(scale(1.1, 1.1) translateX(0));
-    }
-    100% {
-        .hidden();
-        .transform(scale(1, 1) translateX(-900%));
-    }
-});
-.fx-tinOutRight {
-    .fx-animation();
-    .animation-name(fx-tinOutRight);
-}
-.keyframes(fx-tinOutRight; {
-    0%, 20%, 40%, 50% {
-        .visible();
-        .transform(scale(1, 1) translateX(0));
-    }
-    10%, 30% {
-        .transform(scale(1.1, 1.1) translateX(0));
-    }
-    100% {
-        .hidden();
-        .transform(scale(1, 1) translateX(900%));
-    }
-});
-.fx-tinOutUp {
-    .fx-animation();
-    .animation-name(fx-tinOutUp);
-}
-.keyframes(fx-tinOutUp; {
-    0%, 20%, 40%, 50% {
-        .visible();
-        .transform(scale(1, 1) translateY(0));
-    }
-    10%, 30% {
-        .transform(scale(1.1, 1.1) translateY(0));
-    }
-    100% {
-        .hidden();
-        .transform(scale(1, 1) translateY(-900%));
-    }
-});
+@import "less/effects/tin/tinindown.less";
+@import "less/effects/tin/tininleft.less";
+@import "less/effects/tin/tininright.less";
+@import "less/effects/tin/tininup.less";
+@import "less/effects/tin/tinoutdown.less";
+@import "less/effects/tin/tinoutleft.less";
+@import "less/effects/tin/tinoutright.less";
+@import "less/effects/tin/tinoutup.less";
+
+
 //===========================================
 // Space In & Out (8)
 //===========================================
-.fx-spaceInDown {
-    .fx-animation();
-    .animation-name(fx-spaceInDown);
-    .transform-origin(center bottom);
-}
-.keyframes(fx-spaceInDown; {
-    from {
-        .hidden();
-        .transform(scale(.2) translate(0%, 200%));
-    }
-    to {
-        .visible();
-        .transform(scale(1) translate(0%, 0%));
-    }
-});
-.fx-spaceInLeft {
-    .fx-animation();
-    .animation-name(fx-spaceInLeft);
-    .transform-origin(left center);
-}
-.keyframes(fx-spaceInLeft; {
-    from {
-        .hidden();
-        .transform(scale(.2) translate(-200%, 0%));
-    }
-    to {
-        .visible();
-        .transform(scale(1) translate(0%, 0%));
-    }
-});
-.fx-spaceInRight {
-    .fx-animation();
-    .animation-name(fx-spaceInRight);
-    .transform-origin(right center);
-}
-.keyframes(fx-spaceInRight; {
-    from {
-        .hidden();
-        .transform(scale(.2) translate(200%, 0%));
-    }
-    to {
-        .visible();
-        .transform(scale(1) translate(0%, 0%));
-    }
-});
-.fx-spaceInUp {
-    .fx-animation();
-    .animation-name(fx-spaceInUp);
-    .transform-origin(center top);
-}
-.keyframes(fx-spaceInUp; {
-    from {
-        .hidden();
-        .transform(scale(.2) translate(0%, -200%));
-    }
-    to {
-        .visible();
-        .transform(scale(1) translate(0%, 0%));
-    }
-});
-.fx-spaceOutDown {
-    .fx-animation();
-    .animation-name(fx-spaceOutDown);
-    .transform-origin(center bottom);
-}
-.keyframes(fx-spaceOutDown; {
-    from {
-        .visible();
-        .transform(scale(1) translate(0%, 0%));
-    }
-    to {
-        .hidden();
-        .transform(scale(.2) translate(0%, 200%));
-    }
-});
-.fx-spaceOutLeft {
-    .fx-animation();
-    .animation-name(fx-spaceOutLeft);
-    .transform-origin(left center);
-}
-.keyframes(fx-spaceOutLeft; {
-    from {
-        .visible();
-        .transform(scale(1) translate(0%, 0%));
-    }
-    to {
-        .hidden();
-        .transform(scale(.2) translate(-200%, 0%));
-    }
-});
-.fx-spaceOutRight {
-    .fx-animation();
-    .animation-name(fx-spaceOutRight);
-    .transform-origin(right center);
-}
-.keyframes(fx-spaceOutRight; {
-    from {
-        .visible();
-        .transform(scale(1) translate(0%, 0%));
-    }
-    to {
-        .hidden();
-        .transform(scale(.2) translate(200%, 0%));
-    }
-});
-.fx-spaceOutUp {
-    .fx-animation();
-    .animation-name(fx-spaceOutUp);
-    .transform-origin(center top);
-}
-.keyframes(fx-spaceOutUp; {
-    from {
-        .visible();
-        .transform(scale(1) translate(0%, 0%));
-    }
-    to {
-        .hidden();
-        .transform(scale(.2) translate(0%, -200%));
-    }
-});
+@import "less/effects/space/spaceindown.less";
+@import "less/effects/space/spaceinleft.less";
+@import "less/effects/space/spaceinright.less";
+@import "less/effects/space/spaceinup.less";
+@import "less/effects/space/spaceoutdown.less";
+@import "less/effects/space/spaceoutleft.less";
+@import "less/effects/space/spaceoutright.less";
+@import "less/effects/space/spaceoutup.less";
+
+
 //===========================================
 // Flip In & Out (5)
 //===========================================
-.fx-flip {
-    .fx-animation();
-    .animation-name(fx-flip);
-    .backface-visibility(visible);
-}
-.keyframes(fx-flip; {
-    from {
-        .transform(perspective(400px) rotate3d(0, 1, 0, -360deg));
-        .animation-timing-function(ease-out);
-    }
-    40% {
-        .transform(perspective(400px) translate3d(0, 0, 30px) rotate3d(0, 1, 0, -190deg));
-        .animation-timing-function(ease-out);
-    }
-    50% {
-        .transform(perspective(400px) translate3d(0, 0, 30px) rotate3d(0, 1, 0, -170deg));
-        .animation-timing-function(ease-in);
-    }
-    80% {
-        .transform(perspective(400px) scale3d(.95, .95, .95));
-        .animation-timing-function(ease-in);
-    }
-    to {
-        .transform(perspective(400px));
-        .animation-timing-function(ease-in);
-    }
-});
-.fx-flipInX {
-    .fx-animation();
-    .animation-name(fx-flipInX);
-    .backface-visibility(visible);
-}
-.keyframes(fx-flipInX; {
-    from {
-        .hidden();
-        .transform(perspective(400px) rotate3d(1, 0, 0, 90deg));
-        .animation-timing-function(ease-in);
-    }
-    40% {
-        .transform(perspective(400px) rotate3d(1, 0, 0, -20deg));
-        .animation-timing-function(ease-in);
-    }
-    60% {
-        .visible();
-        .transform(perspective(400px) rotate3d(1, 0, 0, 10deg));
-    }
-    80% {
-        .transform(perspective(400px) rotate3d(1, 0, 0, -5deg));
-    }
-    to {
-        .transform(perspective(400px));
-    }
-});
-.fx-flipInY {
-    .fx-animation();
-    .animation-name(fx-flipInY);
-    .backface-visibility(visible);
-}
-.keyframes(fx-flipInY; {
-    from {
-        .hidden();
-        .transform(perspective(400px) rotate3d(0, 1, 0, 90deg));
-        .animation-timing-function(ease-in);
-    }
-    40% {
-        .transform(perspective(400px) rotate3d(0, 1, 0, -20deg));
-        .animation-timing-function(ease-in);
-    }
-    60% {
-        .visible();
-        .transform(perspective(400px) rotate3d(0, 1, 0, 10deg));
-    }
-    80% {
-        .transform(perspective(400px) rotate3d(0, 1, 0, -5deg));
-    }
-    to {
-        .transform(perspective(400px));
-    }
-});
-.fx-flipOutX {
-    .fx-animation();
-    .animation-name(fx-flipOutX);
-    .backface-visibility(visible);
-}
-.keyframes(fx-flipOutX; {
-    from {
-        .transform(perspective(400px));
-    }
-    30% {
-        .visible();
-        .transform(perspective(400px) rotate3d(1, 0, 0, -20deg));
-        opacity: 1;
-    }
-    to {
-        .hidden();
-        .transform(perspective(400px) rotate3d(1, 0, 0, 90deg));
-    }
-});
-.fx-flipOutY {
-    .fx-animation();
-    .animation-name(fx-flipOutY);
-    .backface-visibility(visible);
-}
-.keyframes(fx-flipOutY; {
-    from {
-        .transform(perspective(400px));
-    }
-    30% {
-        .visible();
-        .transform(perspective(400px) rotate3d(0, 1, 0, -15deg));
-    }
-    to {
-        .hidden();
-        .transform(perspective(400px) rotate3d(0, 1, 0, 90deg));
-    }
-});
+@import "less/effects/flip/flip.less";
+@import "less/effects/flip/flipinx.less";
+@import "less/effects/flip/flipiny.less";
+@import "less/effects/flip/flipoutx.less";
+@import "less/effects/flip/flipouty.less";
+
+
 //===========================================
 // LightSpeed In & Out (2)
 //===========================================
-.fx-lightSpeedIn {
-    .fx-animation();
-    .animation-name(fx-lightSpeedIn);
-    .animation-timing-function(ease-out);
-}
-.keyframes(fx-lightSpeedIn; {
-    from {
-        .hidden();
-        .transform(translate3d(100%, 0, 0) skewX(-10deg));
-    }
-    60% {
-        .visible();
-        .transform(skewX(5deg));
-    }
-    80% {
-        .transform(skewX(-2deg));
-    }
-    to {
-        .transform(none);
-    }
-});
-.fx-lightSpeedOut {
-    .fx-animation();
-    .animation-name(fx-lightSpeedOut);
-    .animation-timing-function(ease-in);
-}
-.keyframes(fx-lightSpeedOut; {
-    from {
-        .visible();
-    }
-    to {
-        .hidden();
-        .transform(translate3d(100%, 0, 0) skewX(5deg));
-    }
-});
+@import "less/effects/lightspeed/lightspeedin.less";
+@import "less/effects/lightspeed/lightspeedout.less";
+
 
 //===========================================
 // Roll In & Out (2)
 //===========================================
-.fx-rollIn {
-    .fx-animation();
-    .animation-name(fx-rollIn);
-}
-.keyframes(fx-rollIn; {
-    from {
-        .hidden();
-        .transform(translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg));
-    }
-    to {
-        .visible();
-        .transform(none);
-    }
-});
-.fx-rollOut {
-    .fx-animation();
-    .animation-name(fx-rollOut);
-}
-.keyframes(fx-rollOut; {
-    from {
-        .visible();
-    }
-    to {
-        .hidden();
-        .transform(translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg));
-    }
-});
+@import "less/effects/roll/rollin.less";
+@import "less/effects/roll/rollout.less";
+
+
 //===========================================
 // Vanish In & Out (2)
 //===========================================
-.fx-vanishIn {
-    .fx-animation();
-    .animation-name(fx-vanishIn);
-    .transform-origin(center center);
-}
-.keyframes(fx-vanishIn; {
-    from {
-        .hidden();
-        .transform(scale(2, 2));
-        .filter(blur(20px));
-    }
-    to {
-        .visible();
-        .transform(scale(1, 1));
-        .filter(blur(0px));
-    }
-});
-.fx-vanishOut {
-    .fx-animation();
-    .animation-name(fx-vanishOut);
-}
-.keyframes(fx-vanishOut; {
-    from {
-        .visible();
-        .transform(scale(1, 1));
-        .filter(blur(0px));
-    }
-    to {
-        .hidden();
-        .transform(scale(2, 2));
-        .filter(blur(20px));
-    }
-});
+@import "less/effects/vanish/vanishin.less";
+@import "less/effects/vanish/vanishout.less";
+
+
 //===========================================
 // Swash In & Out (2)
 //===========================================
-.fx-swashIn {
-    .fx-animation();
-    .animation-name(fx-swashIn);
-    .transform-origin(center center);
-}
-.keyframes(fx-swashIn; {
-    0% {
-        .hidden();
-        .transform(scale(0, 0));
-    }
-    90% {
-        .visible();
-        .transform(scale(0.9, 0.9));
-    }
-    100% {
-        .transform(scale(1, 1));
-    }
-});
-.fx-swashOut {
-    .fx-animation();
-    .animation-name(fx-swashOut);
-    .transform-origin(center center);
-}
-.keyframes(fx-swashOut; {
-    0% {
-        .visible();
-        .transform(scale(1, 1));
-    }
-    80% {
-        .visible();
-        .transform(scale(0.9, 0.9));
-    }
-    100% {
-        .hidden();
-        .transform(scale(0, 0));
-    }
-});
+@import "less/effects/swash/swashin.less";
+@import "less/effects/swash/swashout.less";
+
+
 //===========================================
 // Foolish In & Out (2)
 //===========================================
-.fx-foolishIn {
-    .fx-animation();
-    .animation-name(fx-foolishIn);
-}
-.keyframes(fx-foolishIn; {
-    0% {
-        .hidden();
-        .transform-origin(50% 50%);
-        .transform(scale(0, 0) rotate(360deg));
-    }
-    20% {
-        .visible();
-        .transform-origin(0% 100%);
-        .transform(scale(0.5, 0.5) rotate(0deg));
-    }
-    40% {
-        .transform-origin(100% 100%);
-        .transform(scale(0.5, 0.5) rotate(0deg));
-    }
-    60% {
-        .transform-origin(0% 0%);
-        .transform(scale(0.5, 0.5) rotate(0deg));
-    }
-    80% {
-        .transform-origin(0% 0%);
-        .transform(scale(0.5, 0.5) rotate(0deg));
-    }
-    100% {
-        .transform-origin(50% 50%);
-        .transform(scale(1, 1) rotate(0deg));
-    }
-});
-.fx-foolishOut {
-    .fx-animation();
-    .animation-name(fx-foolishOut);
-}
-.keyframes(fx-foolishOut; {
-    0% {
-        .visible();
-        .transform-origin(50% 50%);
-        .transform(scale(1, 1) rotate(360deg));
-    }
-    20% {
-        .transform-origin(0% 0%);
-        .transform(scale(0.5, 0.5) rotate(0deg));
-    }
-    40% {
-        .transform-origin(100% 0%);
-        .transform(scale(0.5, 0.5) rotate(0deg));
-    }
-    60% {
-        .transform-origin(0%);
-        .transform(scale(0.5, 0.5) rotate(0deg));
-    }
-    80% {
-        .visible();
-        .transform-origin(0% 100%);
-        .transform(scale(0.5, 0.5) rotate(0deg));
-    }
-    100% {
-        .hidden();
-        .transform-origin(50% 50%);
-        .transform(scale(0, 0) rotate(0deg));
-    }
-});
+@import "less/effects/foolish/foolishin.less";
+@import "less/effects/foolish/foolishout.less";
+
+
 //===========================================
 // Hole In & Out (2)
 //===========================================
-.fx-holeIn {
-    .fx-animation();
-    .animation-name(fx-holeIn);
-    .transform-origin(center center);
-}
-.keyframes(fx-holeIn; {
-    from {
-        .hidden();
-        .transform(scale(0, 0) rotateY(180deg));
-    }
-    to {
-        .visible();
-        .transform(scale(1, 1) rotateY(0deg));
-    }
-});
-.fx-holeOut {
-    .fx-animation();
-    .animation-name(fx-holeOut);
-    .transform-origin(center center);
-}
-.keyframes(fx-holeOut; {
-    from {
-        .visible();
-        .transform(scale(1, 1) rotateY(0deg));
-    }
-    to {
-        .hidden();
-        .transform(scale(0, 0) rotateY(180deg));
-    }
-});
+@import "less/effects/hole/holein.less";
+@import "less/effects/hole/holeout.less";
+
+
 //===========================================
 // Bomb In & Out (2)
 //===========================================
-.fx-bombOutLeft {
-    .fx-animation();
-    .animation-name(fx-bombOutLeft);
-}
-.keyframes(fx-bombOutLeft; {
-    0% {
-        .visible();
-        .transform-origin(50% 50%);
-        .transform(rotate(0deg));
-        .filter(blur(0px));
-    }
-    50% {
-        .visible();
-        .transform-origin(-30% 50%);
-        .transform(rotate(-160deg));
-        .filter(blur(0px));
-    }
-    100% {
-        .hidden();
-        .transform-origin(-30% 50%);
-        .transform(rotate(-160deg));
-        .filter(blur(20px));
-    }
-});
-.fx-bombOutRight {
-    .fx-animation();
-    .animation-name(fx-bombOutRight);
-}
-.keyframes(fx-bombOutRight; {
-    0% {
-        .visible();
-        .transform-origin(50% 50%);
-        .transform(rotate(0deg));
-        .filter(blur(0px));
-    }
-    50% {
-        .visible();
-        .transform-origin(130% 50%);
-        .transform(rotate(160deg));
-        .filter(blur(0px));
-    }
-    100% {
-        .hidden();
-        .transform-origin(130% 50%);
-        .transform(rotate(160deg));
-        .filter(blur(20px));
-    }
-});
+@import "less/effects/bomb/bomboutleft.less";
+@import "less/effects/bomb/bomboutright.less";

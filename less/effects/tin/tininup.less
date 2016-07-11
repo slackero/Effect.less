@@ -1,0 +1,17 @@
+.fx-tinInUp {
+    .fx-animation();
+    .animation-name(fx-tinInUp);
+}
+.keyframes(fx-tinInUp; {
+    0% {
+        .hidden();
+        .transform(scale(1, 1) translateY(-900%));
+    }
+    50%, 70%, 90% {
+        .visible();
+        .transform(scale(1.1, 1.1) translateY(0));
+    }
+    60%, 80%, 100% {
+        .transform(scale(1, 1) translateY(0));
+    }
+});

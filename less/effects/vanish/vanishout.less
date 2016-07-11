@@ -1,0 +1,16 @@
+.fx-vanishOut {
+    .fx-animation();
+    .animation-name(fx-vanishOut);
+}
+.keyframes(fx-vanishOut; {
+    from {
+        .visible();
+        .transform(scale(1, 1));
+        .filter(blur(0px));
+    }
+    to {
+        .hidden();
+        .transform(scale(2, 2));
+        .filter(blur(20px));
+    }
+});

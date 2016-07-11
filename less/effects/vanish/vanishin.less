@@ -1,0 +1,17 @@
+.fx-vanishIn {
+    .fx-animation();
+    .animation-name(fx-vanishIn);
+    .transform-origin(center center);
+}
+.keyframes(fx-vanishIn; {
+    from {
+        .hidden();
+        .transform(scale(2, 2));
+        .filter(blur(20px));
+    }
+    to {
+        .visible();
+        .transform(scale(1, 1));
+        .filter(blur(0px));
+    }
+});

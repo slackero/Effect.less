@@ -1,0 +1,15 @@
+.fx-rotateIn {
+    .fx-animation();
+    .animation-name(fx-rotateIn);
+    .transform-origin(center);
+}
+.keyframes(fx-rotateIn; {
+    from {
+        .hidden();
+        .transform(rotate3d(0, 0, 1, -200deg));
+    }
+    to {
+        .visible();
+        .transform(none);
+    }
+});

@@ -1,0 +1,15 @@
+.fx-holeIn {
+    .fx-animation();
+    .animation-name(fx-holeIn);
+    .transform-origin(center center);
+}
+.keyframes(fx-holeIn; {
+    from {
+        .hidden();
+        .transform(scale(0, 0) rotateY(180deg));
+    }
+    to {
+        .visible();
+        .transform(scale(1, 1) rotateY(0deg));
+    }
+});

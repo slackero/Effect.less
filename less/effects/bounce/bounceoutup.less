@@ -1,0 +1,17 @@
+.fx-bounceOutUp {
+    .fx-animation();
+    .animation-name(fx-bounceOutUp);
+}
+.keyframes(fx-bounceOutUp; {
+    20% {
+        .transform(translate3d(0, -10px, 0));
+    }
+    40%, 45% {
+        .visible();
+        .transform(translate3d(0, 20px, 0));
+}
+    to {
+        .hidden();
+        .transform(translate3d(0, -2000px, 0));
+    }
+});

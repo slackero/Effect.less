@@ -1,0 +1,15 @@
+.fx-spaceOutDown {
+    .fx-animation();
+    .animation-name(fx-spaceOutDown);
+    .transform-origin(center bottom);
+}
+.keyframes(fx-spaceOutDown; {
+    from {
+        .visible();
+        .transform(scale(1) translate(0%, 0%));
+    }
+    to {
+        .hidden();
+        .transform(scale(.2) translate(0%, 200%));
+    }
+});

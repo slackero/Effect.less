@@ -1,0 +1,32 @@
+.fx-foolishIn {
+    .fx-animation();
+    .animation-name(fx-foolishIn);
+}
+.keyframes(fx-foolishIn; {
+    0% {
+        .hidden();
+        .transform-origin(50% 50%);
+        .transform(scale(0, 0) rotate(360deg));
+    }
+    20% {
+        .visible();
+        .transform-origin(0% 100%);
+        .transform(scale(0.5, 0.5) rotate(0deg));
+    }
+    40% {
+        .transform-origin(100% 100%);
+        .transform(scale(0.5, 0.5) rotate(0deg));
+    }
+    60% {
+        .transform-origin(0% 0%);
+        .transform(scale(0.5, 0.5) rotate(0deg));
+    }
+    80% {
+        .transform-origin(0% 0%);
+        .transform(scale(0.5, 0.5) rotate(0deg));
+    }
+    100% {
+        .transform-origin(50% 50%);
+        .transform(scale(1, 1) rotate(0deg));
+    }
+});

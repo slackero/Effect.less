@@ -1,0 +1,15 @@
+.fx-spaceInRight {
+    .fx-animation();
+    .animation-name(fx-spaceInRight);
+    .transform-origin(right center);
+}
+.keyframes(fx-spaceInRight; {
+    from {
+        .hidden();
+        .transform(scale(.2) translate(200%, 0%));
+    }
+    to {
+        .visible();
+        .transform(scale(1) translate(0%, 0%));
+    }
+});

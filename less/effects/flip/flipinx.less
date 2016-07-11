@@ -1,0 +1,26 @@
+.fx-flipInX {
+    .fx-animation();
+    .animation-name(fx-flipInX);
+    .backface-visibility(visible);
+}
+.keyframes(fx-flipInX; {
+    from {
+        .hidden();
+        .transform(perspective(400px) rotate3d(1, 0, 0, 90deg));
+        .animation-timing-function(ease-in);
+    }
+    40% {
+        .transform(perspective(400px) rotate3d(1, 0, 0, -20deg));
+        .animation-timing-function(ease-in);
+    }
+    60% {
+        .visible();
+        .transform(perspective(400px) rotate3d(1, 0, 0, 10deg));
+    }
+    80% {
+        .transform(perspective(400px) rotate3d(1, 0, 0, -5deg));
+    }
+    to {
+        .transform(perspective(400px));
+    }
+});

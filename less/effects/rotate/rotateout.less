@@ -1,0 +1,14 @@
+.fx-rotateOut {
+    .fx-animation();
+    .animation-name(fx-rotateOut);
+    .transform-origin(center);
+}
+.keyframes(fx-rotateOut; {
+    from {
+        .visible();
+    }
+    to {
+        .hidden();
+        .transform(rotate3d(0, 0, 1, 200deg));
+    }
+});

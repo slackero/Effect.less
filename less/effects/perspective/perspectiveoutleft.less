@@ -1,0 +1,15 @@
+.fx-perspectiveOutLeft {
+    .fx-animation();
+    .animation-name(fx-perspectiveOutLeft);
+    .transform-origin(top left);
+}
+.keyframes(fx-perspectiveOutLeft; {
+    from {
+        .visible();
+        .transform(perspective(800px) rotateY(0deg));
+    }
+    to {
+        .hidden();
+        .transform(perspective(800px) rotateY(-180deg));
+    }
+});
